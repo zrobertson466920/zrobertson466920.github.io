@@ -51,4 +51,7 @@ Nice. What happens if you started taling with Freud? Let's have Freud respond to
 
 "One may say, of the very nature of the existence of smaller communities, through which the evolution of culture, therefore, is justice — that is, genetic explanation of this kind is indispensable." - Definitely Freud
 
+"Existence of a master? This is rather to show how this association was formed, and one defines its effects are perhaps not so much talk about such things, how those who discounted it out in the field of sexuality." - Focoult
+
+"Ego and this task ; and that ought not to regard another as an instinct of destruction first made its appearance in psycho-analytical literature and how far away from its value and not belonging to culture aU the activities aimed at controlling the forces of cohesion consist predominantly of identifications of the tension between ego and what originates in the end it can also hold himself guilty" - Freud
 
