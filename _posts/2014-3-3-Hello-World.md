@@ -22,13 +22,21 @@ Of course, we also have simpler methods of analysis available. Assume you haven'
 Let's take this 'analogy' further. Maybe you haven't actually read 'History of Sexuality' at all. Maybe you got distracted writing a blog post or something...then maybe you'd like to have some talking points for class. How might you go about that? Well, you're going to want to know the key terms for the text. We have the key words, 'Power', 'Sexuality', 'Sex', 'Discourse', 'Deployment', 'Century'. That's not really enough to start talking without sounding like an idiot. Let's try finding related words. These are words that frequenty appear together. 
 
  1 nineteenth  century       47
+ 
  2 eighteenth  century       39
+ 
  3 repressive  hypothesis    22
+ 
  4 scientia    sexualis      19
+ 
  5 social      body          16
+ 
  6 power       relations     12
+ 
  7 seventeenth century       11
+ 
  8 force       relations      9
+ 
  9 ars         erotica        8
  
 Ok, so this guy is historical...besides that, this seems to be a book that relates a wide swath of material together. The main things handeled seem to be the 'repressive hypthesis', 'social body', 'power relations', and 'force relations'. Say, you're getting desperate, you  r e a l l y  need to think like this guy. Now is the time to start 'copying' how this guy talks. We'll use a Markov Chain, it's a model of all the conditional probabilities of the words. Put simply, it gives likely predictions for the next word an author would use, given that he already said something. Let's find out about this 'repressive hypothesis'. We construct our model, the predict what Focoult would say if he started a sentence with our key relation. We get,
@@ -42,4 +50,5 @@ Discourse looked important, what's that about Focoult?
 Nice. What happens if you started taling with Freud? Let's have Freud respond to this idea of discourse (we seed with enables/one's).
 
 "One may say, of the very nature of the existence of smaller communities, through which the evolution of culture, therefore, is justice — that is, genetic explanation of this kind is indispensable." - Definitely Freud
+
 
