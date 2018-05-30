@@ -7,7 +7,7 @@ title: Digital Analysis of SOSC Readings
 
 ![_config.yml]({{ site.baseurl }}/images/wordcloud.png)
 
-![_config.yml]({{ site.baseurl }}/images/radarchart_overall.png)
+![_config.yml]({{ site.baseurl }}/images/radarchar_overall.png)
 
 ![_config.yml]({{ site.baseurl }}/images/radarchart_MM.png)
 
