@@ -3,11 +3,23 @@ layout: post
 title: Digital Analysis of SOSC Readings
 ---
 
-We have a progression of the sentiment in 'Second Sex' as the book progresses. There's a statistically significant decline in 'positive' sentiment as a function of the narrative. The correlation is weak only at 20%. 
+![_config.yml]({{ site.baseurl }}/images/wordcloud_normalized.png)
 
-![_config.yml]({{ site.baseurl }}/images/figure_1.png)
+![_config.yml]({{ site.baseurl }}/images/wordcloud.png)
 
-![_config.yml]({{ site.baseurl }}/images/figure_2.png)
+![_config.yml]({{ site.baseurl }}/images/radarchart_overall.png)
+
+![_config.yml]({{ site.baseurl }}/images/radarchart_MM.png)
+
+![_config.yml]({{ site.baseurl }}/images/radarchart_GM.png)
+
+![_config.yml]({{ site.baseurl }}/images/radarchart_CD.png)
+
+![_config.yml]({{ site.baseurl }}/images/radarchart_DW.png)
+
+![_config.yml]({{ site.baseurl }}/images/radarchart_SS.png)
+
+![_config.yml]({{ site.baseurl }}/images/radarchart_HS.png)
 
 Sentiment analysis is extensible. We can also analyze sentiments about 'disgust'. For this we look at Freud's 'Civilization and it's Discontents'. We see that the biggest spike happens about 20% into the book. This corresponds roughly with pages 30 through 36. This maps directly to the discussion of the 'oceanic feeling'...
 
@@ -18,26 +30,6 @@ Of course, we also have simpler methods of analysis available. Assume you haven'
 ![_config.yml]({{ site.baseurl }}/images/figure_4.png)
 
 ![_config.yml]({{ site.baseurl }}/images/figure_5.png)
-
-Let's take this 'analogy' further. Maybe you haven't actually read 'History of Sexuality' at all. Maybe you got distracted writing a blog post or something...then maybe you'd like to have some talking points for class. How might you go about that? Well, you're going to want to know the key terms for the text. We have the key words, 'Power', 'Sexuality', 'Sex', 'Discourse', 'Deployment', 'Century'. That's not really enough to start talking without sounding like an idiot. Let's try finding related words. These are words that frequenty appear together. 
-
- 1 nineteenth  century       47
- 
- 2 eighteenth  century       39
- 
- 3 repressive  hypothesis    22
- 
- 4 scientia    sexualis      19
- 
- 5 social      body          16
- 
- 6 power       relations     12
- 
- 7 seventeenth century       11
- 
- 8 force       relations      9
- 
- 9 ars         erotica        8
  
 Ok, so this guy is historical...besides that, this seems to be a book that relates a wide swath of material together. The main things handeled seem to be the 'repressive hypthesis', 'social body', 'power relations', and 'force relations'. Say, you're getting desperate, you  r e a l l y  need to think like this guy. Now is the time to start 'copying' how this guy talks. We'll use a Markov Chain, it's a model of all the conditional probabilities of the words. Put simply, it gives likely predictions for the next word an author would use, given that he already said something. Let's find out about this 'repressive hypothesis'. We construct our model, the predict what Focoult would say if he started a sentence with our key relation. We get,
 
@@ -54,4 +46,10 @@ Nice. What happens if you started taling with Freud? Let's have Freud respond to
 "Existence of a master? This is rather to show how this association was formed, and one defines its effects are perhaps not so much talk about such things, how those who discounted it out in the field of sexuality." - Focoult
 
 "Ego and this task ; and that ought not to regard another as an instinct of destruction first made its appearance in psycho-analytical literature and how far away from its value and not belonging to culture aU the activities aimed at controlling the forces of cohesion consist predominantly of identifications of the tension between ego and what originates in the end it can also hold himself guilty" - Freud
+
+![_config.yml]({{ site.baseurl }}/images/bigram.png)
+
+![_config.yml]({{ site.baseurl }}/images/tf_idf.png)
+
+
 
