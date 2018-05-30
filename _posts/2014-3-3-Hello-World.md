@@ -6,7 +6,7 @@ published: true
 
 ![_config.yml]({{ site.baseurl }}/images/wordcloud_normalized.png)
 
-This is a tour of the basic methods used in [Digital Humanities](https://en.wikipedia.org/wiki/Digital_humanities) to analyze textual data. The field lies at the intersection of computing technology and the humanities with high potential to provide novel insights into the study of textual data. For example, what you see in the figure above is a collection of the most important words used in the texts we've been reading this quarter.
+This is a quick tour of the basic methods used in [Digital Humanities](https://en.wikipedia.org/wiki/Digital_humanities) to analyze textual data. This field lies at the intersection of computing technology and the humanities with high potential to provide novel insights into the study of textual data. For example, what you see in the figure above is a collection of the most important words used in the texts we've been reading this quarter.
     
 ## Sentiment
 
@@ -58,6 +58,6 @@ At the end of the day, this sort of analysis is only as useful as the conclusion
 
 ![_config.yml]({{ site.baseurl }}/images/tf_idf.png)
 
-We can further as well. By looking at the corpus of texts that are included in the readings we can isolate words that are well connected with other words. By analyzing the 'matrix' of word connections we can see a visualization of the major themes of the quarter.
+We can further as well. By looking at the corpus of texts that are included in the readings we can isolate words that are well connected with other words. By analyzing the 'matrix' of word connections we can see a visualization of the major themes of the quarter. In conclusion, it's clear that the computational methods available can serve as a valuable stepping stone when trying to critically examine text.
 
 ![_config.yml]({{ site.baseurl }}/images/bigram.png)
