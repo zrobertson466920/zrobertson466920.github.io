@@ -1,6 +1,6 @@
 ---
 layout: post
-title: When Mindless Development Creates Mindful Machines: A Path Towards AI Risk or Safety?
+title: AI Risk or Safety?
 published: true
 ---
   
