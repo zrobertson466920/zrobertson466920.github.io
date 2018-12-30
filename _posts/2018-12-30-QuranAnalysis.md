@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calculating the Quran: Thematic Difference Between Early & Late Surahs
+title: Calculating the Quran
 published: true
 ---
 
