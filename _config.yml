@@ -3,15 +3,16 @@
 #
 
 # Name of your site (displayed in the header)
-name: Pure Disco
+name: The Replication Loop
 
 # Short bio or description (displayed in the header)
-description: Dancing through the cosmos while making sure I keep track of my research musings & discogrpahy...
+description: Collection of articles loosly focused on presenting different perspectives on the learning problem. 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://upload.wikimedia.org/wikipedia/commons/d/d1/Front_de_percolation.png
 
 remote_theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "dirt"
 
 #
 # Flags below are optional
