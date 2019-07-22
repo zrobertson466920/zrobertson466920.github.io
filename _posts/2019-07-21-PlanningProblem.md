@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PlanningProblem
-published: true
+title: Planning Problem
+published: false
 ---
 
 \\( X^2 \\)
