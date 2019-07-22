@@ -4,4 +4,4 @@ title: PlanningProblem
 published: true
 ---
 
-\[ X^2 \]
+\( X^2 \)
