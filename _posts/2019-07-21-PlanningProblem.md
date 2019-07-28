@@ -113,11 +113,11 @@ for each \\(\pi\\) we’d have,
 
 \\[(1) \quad V(\pi) = \min \left( \Phi(\pi), \int_{D} V(y) \ dP_x(y) + 1 \right)\\]
 
-Suppose that \\(\Phi(x)\\) is bounded on \\(D\\). Then equation \\((1)\\) has
+**Theorem 3.1.** Suppose that \\(\Phi(x)\\) is bounded on \\(D\\). Then equation \\((1)\\) has
 at least one solution \\(V\\) that satisfies
 \\(\inf_{d \in D} V(d) \ge \inf_{d \in D} \Phi(d)\\).
 
-The trick is to define a sequence of partial solutions using recursion.
+*Proof.* The trick is to define a sequence of partial solutions using recursion.
 Define truncations of \\(V\\) as,
 
 \\[V^0(\pi) = \Phi(\pi)\\]
@@ -135,9 +135,9 @@ can push this refinement process as we must have,
 The intuition here is that we can only do as good as the best plan
 available. It follows from the Lebesgue Convergence Theorem that,
 
-\\[V^*(\pi) = \lim_{n \to \infty} V^n(\pi)\\]
+\\[ V^{*}(\pi) = \lim_{n \to \infty} V^{n}(\pi) \\]
 \\[= \min \left(\Phi(\pi), \lim_{n \to \infty} \int_D V^{n-1}(\pi) \ dP_x(y) + 1 \right)\\]
-\\[= \min \left(\Phi(\pi), \int_D V^*(\pi) \ dP_x(y) + 1 \right)\\]
+\\[ = \min \left(\Phi(\pi), \int_{D} V^{*}(\pi) \ dP_x(y) + 1 \right) \\]
 
 \\[\Rightarrow \inf_{\pi \in D} V^*(\pi) \ge \inf_{\pi \in D} \Phi(\pi)\\]
 
@@ -157,12 +157,12 @@ be compact. We’ll show after the proof that it’s possible to relax this
 condition to an assertion that it’s always possible to transition to a
 certain set of policies.
 
-Let \\(\Phi(D)\\) be a compact topological space and for \\(\pi \in D\\) let
+**Theorem 3.2.** Let \\(\Phi(D)\\) be a compact topological space and for \\(\pi \in D\\) let
 \\(P_x(A) > 0\\) for all open sets in \\(A \in D\\). Then there’s at most a
 single solution such that \\((i)\\) \\(V\\) is continuous and \\((ii)\\)
 \\(\inf_{\pi \in D} V(\pi) = \inf_{\pi \in D} \Phi(x)\\).
 
-For a function \\(R(x)\\) that measures execution time we define the
+*Proof.* For a function \\(R(x)\\) that measures execution time we define the
 advantage as \\(\gamma_r(\pi) = R(x) - \int_D R(y) \ dP_x(y)\\). Think of
 this as a measure of the change in expected execution time. If it’s
 positive the current state has an advantage over the next expected
@@ -172,7 +172,7 @@ that subtracting \\(V\\) from the left-hand side of \\((1)\\) needs to give
 zero. Now, imagine we have two solutions \\(U\\) and \\(V\\) for \\((1)\\).
 Let,
 
-\\[S_1 = \lbrace x | V(x) = U(x) \rbrace, \quad S_2 = \lbrace x | V(x) > U(x) \rbrace, \quad S_3 = \lbrace x | V(x) < U(x) \rbrace\\]
+\\[ S_1 = \lbrace x | V(x) = U(x) \rbrace, \quad S_2 = \lbrace x | V(x) > U(x) \rbrace, \quad S_3 = \lbrace x | V(x) < U(x) \rbrace \\]
 
 We’ll show that \\(S_2 = S_3 = \emptyset\\). Define
 \\(W(x) = \max(U(x),V(x))\\) then for \\(x \in S_1 \cup S_2\\) we have
