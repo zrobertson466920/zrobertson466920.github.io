@@ -221,7 +221,7 @@ This is a contradiction so it must be the case that \\(S_2 = \emptyset\\).
 By symmetry of \\(U\\) and \\(V\\) we can also eliminate \\(S_3\\).
 
 **Corollary 3.3.** Let \\(\Phi(D)\\) be a measurable space where there exists a non-empty
-\\(\Phi(D')\\) such that \\(\Phi(D') \subset \Phi(D)\\) and \\(P_x(D') > 0\\)
+\\(\Phi(D')\\) such that \\(\Phi(D') \subset \Phi(D)\\) and \\(P_x(D') > \delta > 0\\)
 for all \\(x \not \in D'\\). Then we have a single solution \\(V\\) that is
 measurable and bounded.
 
