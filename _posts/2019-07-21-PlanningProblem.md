@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Planning Problem
+title: The Planning Problem
 published: true
 ---
 
