@@ -4,9 +4,9 @@ title: Planning Problem
 published: true
 ---
 
-I’ve been thinking about the law of recursive planning for a while. Basically, it’s the idea that the time spent on solving a problem is equal to time spent planning plus time spent executing. Thus, when we want to decide how much time to spend planning we need to use this metric as the objective. In practice, this is complicated by the fact that the optimization problem is necessarily online. The boundary case is when the amount planning shortens execution time in a one-to-one fashion. In that case, all the time should be spent planning.
+I’ve been thinking about how to plan more effectively for a while. Basically, it’s the idea that the time spent on solving a problem is equal to time spent planning plus time spent executing. Thus, when we want to decide how much time to spend planning we need to use this metric as the objective. In practice, this is complicated by the fact that the optimization problem is necessarily online. The boundary case is when the amount planning shortens execution time in a one-to-one fashion. In that case, all the time should be spent planning.
 
-One particularly deep aspect of the problem is that in order to carry out a task to completion we must have a plan that we execute. The plan could be written in an ‘online’ manner, such as improvisation. The line between planning and doing becomes very blurry and leads to a chicken/egg problem. Which came first, knowledge of a plan or how to execute? I’ll explore this using a few concrete examples to get us going and then we’ll jump off into abstraction to discuss some of the deeper aspects of this problem.
+One particularly recrusive aspect of the problem is that in order to carry out a task to completion we must have a plan that we execute. The plan could be written in an ‘online’ manner, such as improvisation. The line between planning and doing becomes very blurry and leads to a chicken/egg problem. Which came first, knowledge of a plan or how to execute? I’ll explore this using a few concrete examples to get us going and then we’ll jump off into abstraction to discuss some of the deeper aspects of this problem.
 
 # A First Example
 
@@ -16,7 +16,7 @@ The general idea is that you are carrying out some task, like writing an article
 
 The intuition seems to be that there is a strategy that is able to balance between the objectives of planning and executing in an optimal way. However, over the years I’ve caught myself making the error of measuring the effectiveness of having a plan or strategy in terms of how much time it saves me in carrying out the task and will completely ignore the time spent on creating the strategy in the first place. For example, when I was writing this article I spent a significant amount of time crafting a uniqueness proof for the optimal strategy I’ll propose in next section. Was that really optimal? I had a picture of the proof done in under an hour. If you’d asked me right after I’d proved the theorem I’d tell you that it was a good use of time, but it wasn’t necessary for the article. So it’s possible that deviations from this supposed optimal strategy might be part some other strategy for the optimization of a different quantity. However, the case remains that I can readily admit that making the proof was not an optimal use of my time if I claim the purpose was for the completion of the article. 
 
-People are notoriously bad at estimating how much time things will take. Moreover, we’re also poor at estimating the amount of time we spend on tasks with variable time requirements. Thus, when we decide to create a plan we often neglect to estimate the cost of taking such an action and we often fail to measure whether or not the plan was successful. It’s a sort of recursive issue since usually we are trying to use the plan to estimate the cost of taking another action. In some sense what I’m trying to do is contain the infinite-regress to a second-order meta-plan. 
+People are notoriously bad at estimating how much time things will take. The [planning fallacy](https://en.wikipedia.org/wiki/Planning_fallacy) Moreover, we’re also poor at estimating the amount of time we spend on tasks with variable time requirements. Thus, when we decide to create a plan we often neglect to estimate the cost of taking such an action and we often fail to measure whether or not the plan was successful. It’s a sort of recursive issue since usually we are trying to use the plan to estimate the cost of taking another action. In some sense what I’m trying to do is contain the infinite-regress to a second-order meta-plan. 
 
 # A formal statement
 
@@ -112,7 +112,7 @@ Now, lucky for us most of this has already been studied in the context
 of optimal persistent policy theory. These deal with optimal selection
 problems where the \\(n\\)-th observation costs \\(c(n)\\). Thus, we’ll
 adopt this strategy and assume we can construct a sequence of plans
-\\({\pi_t}_{t \ge 0}\\) and incur unit cost for each plan we create.
+\\(\lbrace \pi_t \rbrace_{t \ge 0}\\) and incur unit cost for each plan we create.
 
 Let \\(V(\pi)\\) denote the expected time of planning plus execution for
 continuing to compress \\(\pi\\) after the observation of \\(\pi\\). It
@@ -190,13 +190,15 @@ that subtracting \\(V\\) from the left-hand side of \\((1)\\) needs to give
 zero. Now, imagine we have two solutions \\(U\\) and \\(V\\) for \\((1)\\).
 Let,
 
-\\[ S_1 = \{ x | V(x) = U(x) \}, \quad S_2 = \{ x | V(x) > U(x) \}, \quad S_3 = \{ x | V(x) < U(x) \} \\]
+\\[ S_1 = \{ x \mid V(x) = U(x) \}, \quad S_2 = \{ x \mid V(x) > U(x) \}, \quad S_3 = \{ x \mid V(x) < U(x) \} \\]
 
 We’ll show that \\(S_2 = S_3 = \emptyset\\). Define
 \\(W(x) = \max(U(x),V(x))\\) then for \\(x \in S_1 \cup S_2\\) we have
 \\(W(x) = V(x)\\) and for all \\(x \in D\\),
-\\(\int_D V(y) \ dP_x(y) \le \int_D W(y) \ dP_x(y)\\). From this we
-conclude that \\(\gamma_w(x) \le \gamma_v(x) \le 1\\). Since
+
+\\[\int_D V(y) \ dP_x(y) \le \int_D W(y) \ dP_x(y)\\]
+
+From this we conclude that \\(\gamma_w(x) \le \gamma_v(x) \le 1\\). Since
 \\(U(x) < V(x)\\) and \\(\inf(V(x)) = \inf(\Phi(x))\\) we conclude that we
 have to have \\(\gamma_u(x) = 1\\) or else \\((ii)\\) won’t be satisfied.
 We’re about to run into a problem. We know from the compactness of
@@ -222,3 +224,9 @@ compactness we must look at the infimum which will have a value of say
 get a point \\(x_{\epsilon}\\) inside of the set we took an infimum over.
 Now when we integrate over \\(S\\) we can extract \\(S_{\epsilon}\\) and
 everything will work out.
+
+# Redux
+
+Does this information help? Returning to the article example given at the beginning of the article it would seem as though I spent too much time planning the mathematical portion of the writing. However, now that I'm about done with the article I see that it wasn't really planned at all. I think that if I had realized how much time it would take to format the article, more importantly latex, it would've become readily apparent that I should be sparing in my math usage. I ended up spending about 14 hours on this article altogether. My original estimate was about 7. I spent several hours on making mathematical proofs when I really should've been reading up on how to format an article with latex correctly. I also think that I could've spent a bit more time proof-reading everything before submitting.
+
+It seems as though there's a lot of work that goes on besides just 'making up' good ideas. What ultimately happened was that while I planned how I wanted to write the article at first the unexpected addition of mathematical arguments broke all my estimates. I should've realized that formatting latex would take a long time since it was my first attempt. The ideal of clean separation between planning and execution is a dream. In reality, it seems as though planning should be done whenever you can hedge a bet on it being effective. Figuring out that just comes down to inuition as far as I can tell. 
