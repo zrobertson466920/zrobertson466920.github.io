@@ -4,7 +4,23 @@ title: Planning Problem
 published: true
 ---
 
-# Introduction
+I’ve been thinking about the law of recursive planning for a while. Basically, it’s the idea that the time spent on solving a problem is equal to time spent planning plus time spent executing. Thus, when we want to decide how much time to spend planning we need to use this metric as the objective. In practice, this is complicated by the fact that the optimization problem is necessarily online. The boundary case is when the amount planning shortens execution time in a one-to-one fashion. In that case, all the time should be spent planning.
+
+One particularly deep aspect of the problem is that in order to carry out a task to completion we must have a plan that we execute. The plan could be written in an ‘online’ manner, such as improvisation. The line between planning and doing becomes very blurry and leads to a chicken/egg problem. Which came first, knowledge of a plan or how to execute? I’ll explore this using a few concrete examples to get us going and then we’ll jump off into abstraction to discuss some of the deeper aspects of this problem.
+
+# A First Example
+
+I need a first example. For me, I was writing the article you’re reading so it seems natural to start there. I don’t want to spend too much time planning out the essay. On the other hand, I don’t want to plan so little that the organization and flow is poor. Usually I spend a bit too much time in the planning phase so this article is an experiment in trying to do what is optimal.
+
+The general idea is that you are carrying out some task, like writing an article for your website. You can spend some amount of time thinking and planning out a strategy to achieve you’re goal and then you can spend some amount of time carrying out your plan and achieving the goal. Imagine that the task would usually take several hours. Most people would agree that having a clear list of sub-goals or directions at hand would cut the required time down to just a couple hours. 
+
+The intuition seems to be that there is a strategy that is able to balance between the objectives of planning and executing in an optimal way. However, over the years I’ve caught myself making the error of measuring the effectiveness of having a plan or strategy in terms of how much time it saves me in carrying out the task and will completely ignore the time spent on creating the strategy in the first place. For example, when I was writing this article I spent a significant amount of time crafting a uniqueness proof for the optimal strategy I’ll propose in next section. Was that really optimal? I had a picture of the proof done in under an hour. If you’d asked me right after I’d proved the theorem I’d tell you that it was a good use of time, but it wasn’t necessary for the article. So it’s possible that deviations from this supposed optimal strategy might be part some other strategy for the optimization of a different quantity. However, the case remains that I can readily admit that making the proof was not an optimal use of my time if I claim the purpose was for the completion of the article. 
+
+People are notoriously bad at estimating how much time things will take. Moreover, we’re also poor at estimating the amount of time we spend on tasks with variable time requirements. Thus, when we decide to create a plan we often neglect to estimate the cost of taking such an action and we often fail to measure whether or not the plan was successful. It’s a sort of recursive issue since usually we are trying to use the plan to estimate the cost of taking another action. In some sense what I’m trying to do is contain the infinite-regress to a second-order meta-plan. 
+
+# A formal statement
+
+Given that there are some vague notions surrounding the ideas of planning, executing, and optimal lets put things on a formal footing. Assume that there is an oracle that could tell you how long a task would take without a dedicated plan. Say that for writing this article it returned seven hours. Now, I previously argued that planning should be able to cut this down to just two hours. This is the step where I take a bet with respect to an outside oracle. I am placing a bet that the time it takes to make a plan plus the time it takes to execute that plan is less than the time returned by oracle. If not, I lose the bet. For example, I might spend 6 hours creating a detailed plan and then spend two hours executing for a total of eight hours. In this case I lose. Even though I was able to significantly reduce execution time, I spent way too much time planning to make the strategy effective and ultimately spent more time on the task than if I had just started executing from the start.
 
 Suppose you have to complete some task \\(T\\). Suppose also that you have
 some sort of initial policy \\(\pi_0\\) that delineates all the steps you
@@ -174,7 +190,7 @@ that subtracting \\(V\\) from the left-hand side of \\((1)\\) needs to give
 zero. Now, imagine we have two solutions \\(U\\) and \\(V\\) for \\((1)\\).
 Let,
 
-\\[ S_1 = \lbrace x | V(x) = U(x) \rbrace \\]
+\\[ S_1 = \{ x | V(x) = U(x) \}, \quad S_2 = \{ x | V(x) > U(x) \}, \quad S_3 = \{ x | V(x) < U(x) \} \\]
 
 We’ll show that \\(S_2 = S_3 = \emptyset\\). Define
 \\(W(x) = \max(U(x),V(x))\\) then for \\(x \in S_1 \cup S_2\\) we have
