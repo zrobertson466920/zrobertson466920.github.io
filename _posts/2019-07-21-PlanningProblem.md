@@ -136,10 +136,6 @@ The intuition here is that we can only do as good as the best plan
 available. It follows from the Lebesgue Convergence Theorem that,
 
 \\[ V^{*}(\pi) = \lim_{n \to \infty} V^{n}(\pi) \\]
-\\[= \min \left(\Phi(\pi), \lim_{n \to \infty} \int_D V^{n-1}(\pi) \ dP_x(y) + 1 \right)\\]
-\\[ = \min \left(\Phi(\pi), \int_{D} V^{*}(\pi) \ dP_x(y) + 1 \right) \\]
-
-\\[\Rightarrow \inf_{\pi \in D} V^*(\pi) \ge \inf_{\pi \in D} \Phi(\pi)\\]
 
 Okay, now we need to show that our solution is unique. The idea of the
 proof is that if you had more than a single solution, say \\(V\\) and
