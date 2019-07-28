@@ -137,6 +137,12 @@ available. It follows from the Lebesgue Convergence Theorem that,
 
 \\[ V^{*}(\pi) = \lim_{n \to \infty} V^{n}(\pi) \\]
 
+\\[= \min \left(\Phi(\pi), \lim_{n \to \infty} \int_D V^{n-1}(\pi) \ dP_x(y) + 1 \right)\\]
+
+\\[ = \min \left(\Phi(\pi), \int_{D} V^{*}(\pi) \ dP_x(y) + 1 \right) \\]
+
+\\[\Rightarrow \inf_{\pi \in D} V^*(\pi) \ge \inf_{\pi \in D} \Phi(\pi)\\]
+
 Okay, now we need to show that our solution is unique. The idea of the
 proof is that if you had more than a single solution, say \\(V\\) and
 \\(U\\), there will have to be regions where one policy will go for
@@ -168,7 +174,7 @@ that subtracting \\(V\\) from the left-hand side of \\((1)\\) needs to give
 zero. Now, imagine we have two solutions \\(U\\) and \\(V\\) for \\((1)\\).
 Let,
 
-\\[ S_1 = \lbrace x | V(x) = U(x) \rbrace, \quad S_2 = \lbrace x | V(x) > U(x) \rbrace, \quad S_3 = \lbrace x | V(x) < U(x) \rbrace \\]
+\\[ S_1 = \lbrace x | V(x) = U(x) \rbrace \\]
 
 We’ll show that \\(S_2 = S_3 = \emptyset\\). Define
 \\(W(x) = \max(U(x),V(x))\\) then for \\(x \in S_1 \cup S_2\\) we have
