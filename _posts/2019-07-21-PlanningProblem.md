@@ -51,7 +51,7 @@ returns on planning as \\(\Phi(t) \to 0\\). Thus, a crude model would be
 to model our planning function so that the reduction in execution time
 is proportional to the size of the current execution time.
 
-\\[\cfrac{\partial \Phi}{\partial t} = \lambda \cdot \Phi\\]
+\\[\cfrac{\partial \Phi}{\partial t} = - \lambda \cdot \Phi\\]
 \\[\Rightarrow \Phi(t) = T_0 \cdot e^{-\lambda t}\\]
 
 We’re using \\(T_0\\) to model the amount of time a task would take with
