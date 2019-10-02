@@ -9,7 +9,7 @@ name: The Replication Loop
 description: Collection of articles loosly focused on presenting different perspectives on the learning problem. 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://www.mcescher.com/wp-content/uploads/2013/10/LW355-MC-Escher-Drawing-Hands-1948.jpg
+avatar: https://avatars0.githubusercontent.com/u/28766961?s=400&u=72d0aa76ffdca2cb71002460b6c8f64ee2782b86&v=4
 
 remote_theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "default"
