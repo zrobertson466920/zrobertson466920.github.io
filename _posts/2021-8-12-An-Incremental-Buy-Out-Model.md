@@ -6,11 +6,11 @@ $$
 a_{n+1} = \max (a_n , a_n \cdot \mathbb{I}(w_n > a_n)+1), \quad a_0 = 0
 $$
 
-The asymptotic behavior of $$\lbrace a_n \rbrace$$ determines the profitibility of the website. The ultimate thing to try and calculate would be something like an upper-bound on the long-term profit and compare it with some educated guesses such as the linear rate attainable with a constant pricing model or the naive quadratic expectation one might expect if you think of adding the ask prices together. It turns out that we do worse than both approaches we get that the profit $$o(\nu^2 \log(n))$$.
+The asymptotic behavior of $$\lbrace a_n \rbrace$$ determines the profitibility of the website. The ultimate thing to try and calculate would be something like an upper-bound on the long-term profit and compare it with some educated guesses such as the linear rate attainable with a constant pricing model or the naive quadratic expectation one might expect if you think of adding the ask prices together. It turns out that we do worse than both approaches. We'll show that the profit is $$o(\nu^2 \log(n))$$.
 
 ## First Thoughts
 
-As an aside, it's interesting that if the increments were not thresholded we might be able to work out the asymptotic form of the ask price without an independence assumption.
+As an aside, it's interesting to note that if the increments were not thresholded we can work out the asymptotic form of the ask price without an independence assumption.
 
 **Lemma 1:** Suppose $$(X_i)$$ are zero mean subgaussian with scale parameter $$\nu$$. Then,
 
@@ -18,7 +18,7 @@ $$
 \mathbb{E} \left[\max_{i \in [n]} X_i \right] \le \nu \sqrt{2 \log n}
 $$
 
-Naively, we could use our lemma and claim that $$\mathbb{E}[a_n] \le \nu \sqrt{2 \log n}$$. However, the increments in this model can be arbitrary so we'll want to be more careful.
+Naively, we could use our lemma and claim that $$\mathbb{E}[a_n] \le \nu \sqrt{2 \log n}$$. However, the increments in this model can be arbitrary so we can't use this to derive the long-term profit.
 
 ## Asymptotic Profit
 
@@ -32,10 +32,10 @@ $$
 
 **Remark:** I'm thinking the proof can be upgraded to big-$$O$$ using a Chernoff argument. I wonder if the independence assumption can be dropped as in the lemma.
 
-The final step is to find the long-term profit which is tractable since we know what the previous increments must have been. This would be given by, 
+The final step is to find the long-term profit which is tractable since the increments are identical. This would be given by, 
 
 $$
-\sum_{k = 0}^n \mathbb{E}[a_k] \sim o(\nu^2 \log(n))
+\sum_{k = 0}^n \mathbb{E}[a_k] \sim 1 + 2 + \ldots + a_n \sim a_n^2 \sim o(\nu^2 \log(n))
 $$
 
 This indicates that the model only appears to be better than the naive strategy early on. This mirrors what I observed with the website mentioned above. Unfortunately, I don't know of an approach to drop the independence assumption. Using the lemma doesn't work directly because it doesn't provide information about the structure of the increments whereas the discrete case does. This is what allows us to determine the asymptotic form of the profits. Feel free to drop me an email if you have any suggestions.
