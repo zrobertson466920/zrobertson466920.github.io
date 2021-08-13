@@ -1,5 +1,3 @@
-## An Incremental Buy-Out Model
-
 I saw an [interesting website](https://www.thekingoftheinternet.com/?fbclid=IwAR0lXnCx6GEcSu6ICf4FXp3qoXLwV0z7nNmC_QMftbVhea3LTwg9XMKCOMY) the other day where the winner always had to pay one dollar more than the previous visitor. This got me thinking about what would happen if the sequence of visitors to the website had identically distributed buy-out tendencies $\lbrace w_i \rbrace$. We'll make a technical assumption throughout that the distribution of wealth was [sub-Gaussian](https://en.wikipedia.org/wiki/Sub-Gaussian_distribution).
 
 We'll assume the initial asking price $a_0$ is free and then we have the following recurrence relation,
