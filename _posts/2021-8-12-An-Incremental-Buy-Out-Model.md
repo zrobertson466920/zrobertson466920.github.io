@@ -32,13 +32,13 @@ $$
 
 **Remark:** I'm thinking the proof can be upgraded to big-$$O$$ using a Chernoff argument. I wonder if the independence assumption can be dropped as in the lemma.
 
-The final step is to find the long-term profit which would be given by, 
+The final step is to find the long-term profit which is tractable since we know what the previous increments must have been. This would be given by, 
 
 $$
 \sum_{k = 0}^n \mathbb{E}[a_k] \sim o(\nu^2 \log(n))
 $$
 
-This indicates that the model only appears to be better than the naive strategy 
+This indicates that the model only appears to be better than the naive strategy early on. This mirrors what I observed with the website mentioned above. Unfortunately, I don't know of an approach to drop the independence assumption. Using the lemma doesn't work directly because it doesn't provide information about the structure of the increments whereas the discrete case does. This is what allows us to determine the asymptotic form of the profits. Feel free to drop me an email if you have any suggestions.
 
 **Proof 1:** We need a bound on $$\max_i X_i$$ so we work with,
 
