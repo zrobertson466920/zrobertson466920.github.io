@@ -1,14 +1,12 @@
-I saw an [interesting website](https://www.thekingoftheinternet.com/?fbclid=IwAR0lXnCx6GEcSu6ICf4FXp3qoXLwV0z7nNmC_QMftbVhea3LTwg9XMKCOMY) the other day where the winner always had to pay one dollar more than the previous visitor. This got me thinking about what would happen if the sequence of visitors to the website had identically distributed buy-out tendencies $$\lbrace w_i \rbrace$$. We'll make a technical assumption throughout that the distribution of wealth was [sub-Gaussian](https://en.wikipedia.org/wiki/Sub-Gaussian_distribution).
+I saw an [interesting website](https://www.thekingoftheinternet.com/?fbclid=IwAR0lXnCx6GEcSu6ICf4FXp3qoXLwV0z7nNmC_QMftbVhea3LTwg9XMKCOMY) the other day where the winner always had to pay one dollar more than the previous visitor. This bought the winner the title "King of the Internet". I was a bit surprised to see the price hang at around \$40 dollars for almost two weeks as of the time of writing. In comparison the first several bids were all within the span of a few days. This got me thinking about why that might be the case. Hence the question of this post: What would happen if the sequence of visitors to the website had identically distributed buy-out tendencies $$\lbrace w_i \rbrace$$?
 
-We'll assume the initial asking price $$a_0$$ is free and then we have the following recurrence relation,
+We'll make a technical assumption throughout that the distribution of wealth is [sub-Gaussian](https://en.wikipedia.org/wiki/Sub-Gaussian_distribution). Also it'll be assumed the initial asking price $$a_0$$ is free in which case we have the following recurrence relation,
 
 $$
 a_{n+1} = \max (a_n , a_n \cdot \mathbb{I}(w_n > a_n)+1), \quad a_0 = 0
 $$
 
-The asymptotic behavior of $$\lbrace a_n \rbrace$$ determines the profitibility of the website. 
-
-The ultimate thing to try and calculate would be something like an upper-bound on the long-term profit and compare it with some educated guesses such as the linear rate attainable with a constant pricing model or the naive quadratic expectation one might expect if you think of adding the ask prices together. It turns out that we do worse than both approaches we get that the profit $$o(\nu^2 \log(n))$$.
+The asymptotic behavior of $$\lbrace a_n \rbrace$$ determines the profitibility of the website. The ultimate thing to try and calculate would be something like an upper-bound on the long-term profit and compare it with some educated guesses such as the linear rate attainable with a constant pricing model or the naive quadratic expectation one might expect if you think of adding the ask prices together. It turns out that we do worse than both approaches we get that the profit $$o(\nu^2 \log(n))$$.
 
 ## First Thoughts
 
@@ -34,7 +32,7 @@ $$
 
 **Remark:** I'm thinking the proof can be upgraded to big-$$O$$ using a Chernoff argument. I wonder if the independence assumption can be dropped as in the lemma.
 
-The final step is find the long-term profit which would be given by, 
+The final step is to find the long-term profit which would be given by, 
 
 $$
 \sum_{k = 0}^n \mathbb{E}[a_k] \sim o(\nu^2 \log(n))
