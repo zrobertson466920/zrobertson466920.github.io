@@ -14,8 +14,7 @@ I am a CS PhD student at Stanford. I obtained a masters degree in CS from UIUC. 
 
 ### Publications
 
-1. **Zachary Robertson**, Hantao Zhang, and Sanmi Koyejo. Cooperative inverse decision theory for uncertain prefer-
-ences. AISTATS, 2023
+1. **Zachary Robertson**, Hantao Zhang, and Sanmi Koyejo. Cooperative inverse decision theory for uncertain preferences. AISTATS, 2023
 2. **Zachary Robertson**, Hantao Zhang, and Sanmi Koyejo. Probabilistic performance metric elicitation. 1st Workshop
 on Human and Machine Decisions (WHMD 2021) at NeurIPS 2021, 2022
 3. **Zachary Robertson** and Matthew Walter. Concurrent training improves the performance of behavioral cloning
