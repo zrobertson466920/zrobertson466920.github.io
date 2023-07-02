@@ -6,7 +6,7 @@ permalink: /about/
 
 I am a CS PhD student at Stanford. I obtained a masters degree in CS from UIUC. My undergraduate major was Computational and Applied Mathematics at University of Chicago. I have a variety of research interests in machine learning. I'm particularly motivated by questions around creating human compatible AI. I'm interested in imitation learning, generative models, and learning theory as well.  
 
-[CV](Robertson_Zachary_CV.pdf)
+[CV](Awesome_CV-1.pdf )
 
 ### Contact me
 
