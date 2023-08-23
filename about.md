@@ -14,7 +14,7 @@ I am a CS PhD student at Stanford. I obtained a masters degree in CS from UIUC. 
 
 ### Ongoing Projects
 
-1. **Zachary Robertson** GPT4 is Slightly Helpful for Peer-Review Assistance: A Pilot Study. arXiv preprint arXiv:2307.05492, 2023
+1. **Zachary Robertson**. GPT4 is Slightly Helpful for Peer-Review Assistance: A Pilot Study. arXiv preprint arXiv:2307.05492, 2023
 2. **Zachary Robertson** and Sanmi Koyejo. No Bidding, No Regret: Pairwise-Feedback Mechanisms for Digital Goods and Data Auctions. arXiv preprint arXiv:2306.01860, 2023
 
 ### Publications
