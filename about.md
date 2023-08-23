@@ -4,13 +4,18 @@ title: About
 permalink: /about/
 ---
 
-I am a CS PhD student at Stanford. I obtained a masters degree in CS from UIUC. My undergraduate major was Computational and Applied Mathematics at University of Chicago. I have a variety of research interests in machine learning. I'm particularly motivated by questions around creating human compatible AI. I'm interested in imitation learning, generative models, and learning theory as well.  
+I am a CS PhD student at Stanford. I obtained a masters degree in CS from UIUC. My undergraduate major was Computational and Applied Mathematics at University of Chicago. I have a variety of research interests in machine learning. I'm particularly motivated by questions surrounding human incentives and the creation of human compatible AI. I'm also interested in imitation learning, generative models, and learning theory as well.  
 
-[CV](Awesome_CV-1.pdf )
+[CV](https://github.com/zrobertson466920/zrobertson466920.github.io/blob/master/Awesome_CV-1.pdf)
 
 ### Contact me
 
 [zroberts@stanford.edu](mailto:zroberts@stanford.edu)
+
+### Ongoing Projects
+
+1. **Zachary Robertson** GPT4 is Slightly Helpful for Peer-Review Assistance: A Pilot Study. arXiv preprint arXiv:2307.05492, 2023
+2. **Zachary Robertson** and Sanmi Koyejo. No Bidding, No Regret: Pairwise-Feedback Mechanisms for Digital Goods and Data Auctions. arXiv preprint arXiv:2306.01860, 2023
 
 ### Publications
 
