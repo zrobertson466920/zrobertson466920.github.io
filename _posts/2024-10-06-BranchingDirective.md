@@ -8,11 +8,11 @@ In the realm of artificial intelligence and knowledge management, we often find 
 
 **Philosophical Roots**
 
-To understand the motivation behind this project, we must first delve into some thought-provoking philosophical concepts. Ruth Millikan's "Swampman" thought experiment challenges our notions of identity and meaning. Imagine a machine that could assemble atoms to create an exact physical duplicate of a person, including their brain state. This duplicate, the Swampman, would be molecule-for-molecule identical to the original person at the moment of creation.
+To understand the motivation behind this project, we must first set the context with some deeper philosophical concepts. Ruth Millikan's "Swampman" thought experiment challenges our notions of identity and meaning. Imagine a machine that could assemble atoms to create an exact physical duplicate of a person, including their brain state. This clone, the Swampman, would be molecule-for-molecule identical to the original person at the moment of creation.
 
 Yet, Millikan argues, this Swampman would lack genuine thoughts, intentions, or semantic content. Why? Because it lacks the appropriate history. This idea hinges on Millikan's concept of "proper function" - the notion that the meaning and function of our thoughts and behaviors are determined by their evolutionary and personal history.
 
-Building on this foundation, Milligan introduced the concepts of "unitrackers" and "unicepts." A unitracker is akin to a pattern recognition system, allowing us to track and identify recurring elements in our environment. A unicept, on the other hand, is a unified concept that integrates various instances and aspects of a thing across different contexts.
+Building on this foundation, Millikan introduced the concepts of "unitrackers" and "unicepts." A unitracker is akin to a pattern recognition system, allowing us to track and identify recurring elements in our environment. A unicept, on the other hand, is a unified concept that integrates various instances and aspects of a thing across different contexts.
 
 These ideas resonate deeply with the challenge we face in artificial intelligence. Current AI systems excel at unitracking - pattern recognition - but struggle with forming true unicepts, those unified, context-dependent concepts that can be flexibly applied across different situations.
 
