@@ -1,6 +1,10 @@
-**LLM Document Trees: A Unified Approach to Research Management**
+---
+layout: post
+title: Branching Directive: A Unified Approach to Research Management
+published: true
+---
 
-**LLM Document Trees** is an experimental system that automates and self-organizes research using large language models (LLMs) within a graph-based document structure. It represents research as a growing tree of interconnected entries, allowing the LLM to propose new ideas, questions, and findings based on existing content. This setup combines the generative power of LLMs with a structured representation to manage complexity and drive new insights.
+The Branching Directive is an experimental system that automates and self-organizes research using large language models (LLMs) within a graph-based document structure. It represents research as a growing tree of interconnected entries, allowing the LLM to propose new ideas, questions, and findings based on existing content. This setup combines the generative power of LLMs with a structured representation to manage complexity and drive new insights.
 
 ![Full Tree Visualization]({{ site.baseurl }}/images/branching_directive/behavioral_clone.png)
 
