@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Branching Directive: A Unified Approach to Research Management
+title: Branching Directive - A Unified Approach to Research Management
 published: true
 ---
 
