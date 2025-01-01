@@ -25,8 +25,8 @@ Analyzing my research tree revealed two major "groves" of knowledge:
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
     <video width="100%" max-width="800px" controls>
-        <sce src="{{ site.baseurl }}/images/branching_directive/tree_growth.mp4" type="video/mp4">
-        Y browser does not support the video tag.
+        <source src="{{ site.baseurl }}/images/branching_directive/tree_growth.mp4" type="video/mp4">
+        Your browser does not support the video tag.
     </video>
 </div>
 <p style="text-align: center; font-style: italic; margin-top: 10px;">
