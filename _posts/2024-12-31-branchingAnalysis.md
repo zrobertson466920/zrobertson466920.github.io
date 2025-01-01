@@ -1,10 +1,10 @@
 ---
 layout: post
-title: From Garden to Forest - Discovering Nature's Patterns in Research
+title: A Tree in the Garden - Discovering Nature's Patterns in Research
 published: true
 ---
 
-When we first conceived the [Branching Directive](https://zrobertson466920.github.io/BranchingDirective/), we imagined tending a garden of knowledge, guided by Voltaire's famous advice to "cultivate our own garden." What we discovered instead was a forest – one that grows according to mathematical patterns found throughout nature. This revelation transforms our understanding of how research and knowledge naturally organize themselves.
+When we first conceived the [Branching Directive](https://zrobertson466920.github.io/BranchingDirective/), we imagined tending a garden of knowledge, guided by Voltaire's famous advice to "cultivate our own garden." What we discovered instead was a tree – one that grows according to mathematical patterns found throughout nature. This revelation transforms our understanding of how research and knowledge naturally organize themselves.
 
 **From Garden to Forest**
 
@@ -20,7 +20,7 @@ Our research structure shows exactly this kind of natural branching, with a corr
 
 **Structure and Growth**
 
-Analyzing our research forest revealed two major "groves" of knowledge:
+Analyzing our research tree revealed two major "groves" of knowledge:
 
 1. A philosophical core (312 entries) containing foundational concepts
 2. A larger technical section (3,649 entries) with detailed implementations
@@ -35,9 +35,7 @@ Analyzing our research forest revealed two major "groves" of knowledge:
     Time-lapse visualization showing how our research forest grew over time, with new branches forming and connecting as knowledge accumulated.
 </p>
 
-*Visualization of the growth process*
-
-Just as a forest develops through seasons, our research showed distinct growth patterns. We observed what we call "foliation periods" – times when new entries sprouted rapidly in multiple directions before settling into more organized structures. This mirrors how trees first produce leaves in seemingly chaotic patterns before organizing them for optimal sunlight exposure.
+Just as a tree develops through seasons, our research showed distinct growth patterns. We observed what we call "foliation periods" – times when new entries sprouted rapidly in multiple directions before settling into more organized structures. This mirrors how trees first produce leaves in seemingly chaotic patterns before organizing them for optimal sunlight exposure.
 
 **Research Applications**
 
