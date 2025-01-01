@@ -12,7 +12,7 @@ The growth process is simple to explain:
 
 1. An entry is written
 2. A link is made to a previously written entry
-3. While alive repeat (1 $\to$ 2) OR (2 $\to$ 1)
+3. While alive repeat (1 \\( \to \\) 2) OR (2 \\( \to \\) 1)
 
 After five years of development, our research management system has evolved into something far more intriguing than we initially imagined. The system, which combines human research with AI assistance, has grown to contain millions of tokens of text across thousands of interconnected entries. But the most fascinating discovery came when we analyzed its structure.
 
