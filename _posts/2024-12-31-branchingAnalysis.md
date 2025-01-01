@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Tree in the Garden - Discovering Nature's Patterns in Research
+title: (Re)search - How to Grow A Tree in the Garden
 published: true
 ---
 
@@ -14,7 +14,7 @@ The growth process is simple to explain:
 2. A link is made to a previously written entry
 3. While alive repeat (1 \\( \to \\) 2) OR (2 \\( \to \\) 1)
 
-While it is a simple growth process it has allowed for a [variety of research to be conducted](https://scholar.google.com/citations?user=769PIisAAAAJ&hl=en). After five years of development, our research management system has evolved into something far more intriguing than we initially imagined. The system, which combines human research with AI assistance, has grown to contain millions of tokens of text across thousands of interconnected entries. But the most fascinating discovery came when we analyzed its structure.
+While it is a simple growth process it has allowed for a [variety of research to be conducted](https://scholar.google.com/citations?user=769PIisAAAAJ&hl=en). After five years of development, our research management system has evolved into something far more intriguing than we initially imagined. The system, which is human research, has grown to contain millions of tokens of text across thousands of interconnected entries. But the most fascinating discovery came when we analyzed its structure.
 
 **Structure and Growth**
 
