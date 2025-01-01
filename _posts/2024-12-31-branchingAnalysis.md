@@ -35,7 +35,7 @@ Analyzing our research tree revealed two major "groves" of knowledge:
 
 Just as a tree develops through seasons, our research showed distinct growth patterns. We observed what we call "foliation periods" – times when new entries sprouted rapidly in multiple directions before settling into more organized structures. This mirrors how trees first produce leaves in seemingly chaotic patterns before organizing them for optimal sunlight exposure.
 
-Scientists try measure or quantify self-organization using something called the correlation dimension. On the x-axis we measure the logarithmic distance between nodes in the tree - how many steps you can take moving from a start node. On the y-axis we plot how many randomly sampled pairs in the tree are within the distance specified on the x-axis and then take the logarithm. 
+Scientists try measure or quantify self-organization using something called the [correlation dimension](https://en.wikipedia.org/wiki/Correlation_dimension). On the x-axis we measure the logarithmic distance between nodes in the tree - how many steps you can take moving from a start node. On the y-axis we plot how many randomly sampled pairs in the tree are within the distance specified on the x-axis and then take the logarithm. 
 
 ![Correlation Dimension]({{ site.baseurl }}/images/branching_directive/Correlation_Dimension.png)
 
