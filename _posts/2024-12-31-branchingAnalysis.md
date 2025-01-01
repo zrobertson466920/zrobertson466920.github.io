@@ -6,7 +6,7 @@ published: true
 
 When we first conceived the [Branching Directive](https://zrobertson466920.github.io/BranchingDirective/), we imagined tending a garden of knowledge, guided by Voltaire's famous advice to "cultivate our own garden." What we discovered instead was a tree – one that grows according to mathematical patterns found throughout nature. This perspective transforms our understanding of how research and knowledge naturally organize themselves.
 
-**From Garden to Forest**
+**From Garden to Tree**
 
 The growth process is simple to explain:
 
@@ -30,7 +30,7 @@ Analyzing our research tree revealed two major "groves" of knowledge:
     </video>
 </div>
 <p style="text-align: center; font-style: italic; margin-top: 10px;">
-    Time-lapse visualization showing how our research forest grew over time, with new branches forming and connecting as knowledge accumulated.
+    Time-lapse visualization showing how our research tree grew over time, with new branches forming and connecting as knowledge accumulated.
 </p>
 
 Just as a tree develops through seasons, our research showed distinct growth patterns. We observed what we call "foliation periods" – times when new entries sprouted rapidly in multiple directions before settling into more organized structures. This mirrors how trees first produce leaves in seemingly chaotic patterns before organizing them for optimal sunlight exposure.
@@ -63,7 +63,7 @@ We're preparing to release a sanitized version of our research forest (approxima
 - Develop new metrics for measuring knowledge structure
 - Explore the parallels between natural and artificial information growth
 
-Just as ecologists study forests to understand natural systems, we believe studying how knowledge naturally organizes itself can lead to better ways of managing and growing information. Our research has evolved from tending a simple garden to understanding a complex forest ecosystem, complete with its own natural laws and patterns.
+Just as ecologists study trees to understand natural systems, we believe studying how thought naturally organizes itself can lead to better ways of managing and growing information. Our research has evolved from tending a simple garden to understanding a complex tree ecosystem, complete with its own natural laws and patterns.
 
 We invite researchers and developers to consider: How might understanding these natural patterns of knowledge organization influence the design of future information systems? Could artificial chains of thought be more effective if they had features more resembling self-organized branching structure?
 
