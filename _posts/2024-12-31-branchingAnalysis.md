@@ -65,6 +65,6 @@ We're preparing to release a sanitized version of our research forest (approxima
 
 Just as ecologists study forests to understand natural systems, we believe studying how knowledge naturally organizes itself can lead to better ways of managing and growing information. Our research has evolved from tending a simple garden to understanding a complex forest ecosystem, complete with its own natural laws and patterns.
 
-We invite researchers and developers to consider: How might understanding these natural patterns of knowledge organization influence the design of future information systems? Could AI assistants be more effective if they produced trees of thought with more naturalistic branching structure?
+We invite researchers and developers to consider: How might understanding these natural patterns of knowledge organization influence the design of future information systems? Could artificial chains of thought be more effective if they had features more resembling self-organized branching structure?
 
 As we continue to explore this frontier where human knowledge meets artificial intelligence, we're reminded that sometimes the most profound insights come from simply observing and understanding the natural patterns that emerge when we let knowledge grow.
