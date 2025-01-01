@@ -25,8 +25,8 @@ Analyzing my research tree revealed two major "groves" of knowledge:
 
 <div style="display: flex; justify-content: center; margin: 20px 0;">
     <video width="100%" max-width="800px" controls>
-        <source src="{{ site.baseurl }}/images/branching_directive/tree_growth.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+        <sce src="{{ site.baseurl }}/images/branching_directive/tree_growth.mp4" type="video/mp4">
+        Y browser does not support the video tag.
     </video>
 </div>
 <p style="text-align: center; font-style: italic; margin-top: 10px;">
@@ -43,21 +43,19 @@ Scientists try to measure or quantify self-organization using something called t
 
 To understand this graph, imagine zooming into a tree's branches. At each level of magnification, you see a similar pattern repeated – larger branches splitting into smaller ones. A straight line has a dimension of 1, while a filled plane has a dimension of 2. Natural branching patterns, like those found in trees, lightning, or river networks, often fall between these values.
 
-Our research structure shows exactly this kind of natural branching, with a correlation dimension of 1.67 (± 0.07). This isn't just a curious coincidence – it suggests that knowledge organization, when allowed to grow naturally, follows patterns similar to those found throughout nature.
+This research tree shows exactly this kind of natural branching, with a correlation dimension of 1.67 (± 0.07). This isn't just a curious coincidence – it suggests that knowledge organization, when allowed to grow naturally, follows patterns similar to those found throughout nature.
 
 **Research Applications**
 
 This growth pattern has several implications for how I think about knowledge organization. Traditional knowledge bases are often designed with rigid hierarchical structures. These findings suggest that allowing more organic growth patterns – similar to how trees branch or lightning spreads – might be more effective.
 
-The system now serves as a benchmark for studying:
+I hope to use this as a benchmark for studying:
 - Natural knowledge organization patterns
 - Integration of AI assistance in research
 - Long-term knowledge accumulation
 - Self-organizing information structures
 
-**Future Directions**
-
-I am preparing to release a sanitized version of the research forest (approximately 650,000 tokens) as a benchmark dataset. This will allow others to:
+Towards this goal, I am preparing to release a sanitized version of the research forest (approximately 650,000 tokens) as a benchmark dataset. This will allow others to:
 - Study natural knowledge organization patterns
 - Test AI research assistance systems
 - Develop new metrics for measuring knowledge structure
