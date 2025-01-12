@@ -206,7 +206,3 @@ For readers interested in exploring these ideas further, key references include:
 2. Goethe, J.W. (1797). Der Zauberlehrling.
 3. May, R.M. (1976). Simple mathematical models with very complicated dynamics.
 4. Turner, A.M., et al. (2021). Optimal Policies Tend to Seek Power.
-
----
-
-*This post builds on research presented at [Conference/Workshop]. The bifurcation diagram was generated using Python with NumPy and Matplotlib. Code available on GitHub.*
