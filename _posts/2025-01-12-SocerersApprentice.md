@@ -49,7 +49,7 @@ This progression mirrors what would later be formally described in bifurcation t
 
 ### The Role of Sparse Cultural Reinforcement
 
-![Disney's Rendition of Goethe's Poem]({{ site.baseurl }}/images/Mickey_Mouse_Broom.png)
+![Disney's Rendition of Goethe's Poem]({{ site.baseurl }}/images/Mickey_Mouse_Broom.jpg)
 
 The endurance of Der Zauberlehrling, particularly through its adaptation in Disney's Fantasia, highlights how cultural vehicles can preserve critical insights about system behavior. Despite most people encountering this cautionary tale only a few times in their lives, its lesson about recursive control remains remarkably persistent in cultural memory.
 
