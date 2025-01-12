@@ -49,6 +49,8 @@ This progression mirrors what would later be formally described in bifurcation t
 
 ### The Role of Sparse Cultural Reinforcement
 
+![Disney's Rendition of Goethe's Poem]({{ site.baseurl }}/images/Mickey_Mouse_Broom.png)
+
 The endurance of Der Zauberlehrling, particularly through its adaptation in Disney's Fantasia, highlights how cultural vehicles can preserve critical insights about system behavior. Despite most people encountering this cautionary tale only a few times in their lives, its lesson about recursive control remains remarkably persistent in cultural memory.
 
 This "sparse reinforcement" of important principles through memorable narratives serves as a kind of cultural immune system against certain classes of technical mistakes. The apprentice's error - assuming that more delegation would solve the problems caused by initial delegation - continues to resonate precisely because it captures a fundamental truth about recursive systems.
