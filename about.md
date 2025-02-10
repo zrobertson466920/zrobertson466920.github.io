@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-I am a CS PhD student at Stanford's STAIR lab, where we are working on human-AI alignment. My research focuses on developing scalable oversight mechanisms and aligning AI systems with human preferences, drawing from mechanism design, information theory, and complex systems to create principled frameworks for human-AI collaboration. I have a strong theoretical background in optimization, learning theory, and probability theory, with experience integrating language models and reasoning to process complex information. I place a strong emphasis on rigorous empirical evaluation through ablation studies, benchmark development, and human-in-the-loop experiments.
+I am a CS PhD student working with Sanmi Koyejo in [STAIR lab](https://stair.cs.stanford.edu), where we are working on trustworthy AI. My research focuses on developing scalable oversight mechanisms and aligning AI systems with human preferences, drawing from mechanism design, information theory, and complex systems to create principled frameworks for human-AI collaboration.
 
 Prior to Stanford, I obtained a masters in CS from UIUC and a bachelor's in Computational and Applied Mathematics from University of Chicago. I have gained diverse research experience through internships at Google, where I designed tractable surrogates for welfare maximization with applications in ad click-through-rate prediction; Lam Research, optimizing semiconductor wafer production using reinforcement learning; and the Robot Intelligence through Perception Lab at TTIC, working on sparse-depth completion and natural language instruction following for robotic manipulation. I have also conducted research at the Exo-Planets Group at UChicago, improving spectrograph calibration using machine learning, and contributed to the Algorithmic Dynamics Lab, developing algorithms for estimating algorithmic complexity. Additionally, I bring technical business experience from Allen and Company, where I evaluated quantum computing startups and cryptocurrencies. 
 
@@ -15,8 +15,9 @@ Prior to Stanford, I obtained a masters in CS from UIUC and a bachelor's in Comp
 
 ### Ongoing Projects
 
-1. **Zachary Robertson**. [GPT4 is Slightly Helpful for Peer-Review Assistance: A Pilot Study](https://arxiv.org/abs/2307.05492). arXiv preprint arXiv:2307.05492, 2023
-2. **Zachary Robertson** and Sanmi Koyejo. [No Bidding, No Regret: Pairwise-Feedback Mechanisms for Digital Goods and Data Auctions](https://arxiv.org/abs/2306.01860). ISIT Workshop on Information-Theoretic Methods for Trustworthy Machine Learning, 2024
+1. **Zachary Robertson**, Hannah Cha, Andrew Sheha, and Sanmi Koyejo. [Implementability of Information Elicitation Mechanisms with Pre-Trained Language Models. In ICML 2024 Workshop on Theoretical Foundations of Foundation Models](https://openreview.net/pdf?id=QqMnRGlRJk).
+2. **Zachary Robertson**. [GPT4 is Slightly Helpful for Peer-Review Assistance: A Pilot Study](https://arxiv.org/abs/2307.05492). arXiv preprint arXiv:2307.05492, 2023
+3. **Zachary Robertson** and Sanmi Koyejo. [No Bidding, No Regret: Pairwise-Feedback Mechanisms for Digital Goods and Data Auctions](https://arxiv.org/abs/2306.01860). ISIT Workshop on Information-Theoretic Methods for Trustworthy Machine Learning, 2024
 
 ### Publications
 
