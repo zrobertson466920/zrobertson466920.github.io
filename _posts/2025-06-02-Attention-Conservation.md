@@ -4,8 +4,6 @@ title: A Conservation Law in Attention - Why Syntax and Semantics Can't Evolve I
 published: true
 ---
 
-## The Surprising Mathematical Constraint Hidden in Attention
-
 Something fundamental is happening during attention training that we've been missing. While studying the gradient dynamics of self-attention layers, I discovered a conservation law that puts strict constraints on how attention mechanisms can evolve during learning.
 
 The result is striking: **the attention patterns (QK projections) and value transformations (V projections) cannot grow or shrink independently**. They're mathematically coupled by a conservation law that holds throughout training.
