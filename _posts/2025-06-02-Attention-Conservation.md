@@ -18,12 +18,12 @@ $$
 A_W(X) = \text{relu}(X W_{QK} X^T) X W_V
 $$
 
-where $X \in \mathbb{R}^{n \times d_0}$ is the input sequence and $W_{QK} = W_Q W_K^T$ combines the query-key projections.
+where $$X \in \mathbb{R}^{n \times d_0}$$ is the input sequence and $$W_{QK} = W_Q W_K^T$$ combines the query-key projections.
 
-**Theorem:** Under gradient descent training with square loss $\mathcal{L}(A_W(X), y) = \frac{1}{2} \|y - A_W(X)\|^2$, the following quantity is conserved:
+**Theorem:** Under gradient descent training with square loss $$\mathcal{L}(A_W(X), y) = \frac{1}{2} \|y - A_W(X)\|^2$$, the following quantity is conserved:
 
 $$
-\frac{1}{2} \Vert W_{QK}(t) \Vert_F^2 - \frac{1}{2} \Vert W_{QK}(0) \Vert_F^2 = \frac{1}{2} \Vert W_V(t) \Vert_V^2 - \frac{1}{2} \Vert W_V(0) \Vert_F^2
+\frac{1}{2} \Vert W_{QK}(t) \Vert_F^2 - \frac{1}{2} \Vert W_{QK}(0) \Vert_F^2 = \frac{1}{2} \Vert W_V(t) \Vert_F^2 - \frac{1}{2} \Vert W_V(0) \Vert_F^2
 $$
 
 In other words: **the change in attention pattern complexity exactly equals the change in value transformation complexity**.
@@ -46,7 +46,7 @@ $$
 \nabla_{W_V} \mathcal{L} = X^T \cdot \text{relu}(X W_{QK} X^T) \cdot \delta(t)
 $$
 
-where $\delta(t) = A_W(X) - y$ is the prediction error.
+where $$\delta(t) = A_W(X) - y$$ is the prediction error.
 
 The key insight is showing that the inner products are equal:
 
@@ -81,9 +81,9 @@ $$
 = -\eta \sum_{i,j} \mathbb{E}[\delta(t)_i \cdot \text{diag}(X W_V)_j \cdot \text{relu}(X W_{QK} X^T)_{ij}]
 $$
 
-The expressions are identical, proving $\langle \dot{W}_{QK}, W_{QK} \rangle = \langle \dot{W}_V, W_V \rangle$.
+The expressions are identical, proving $$\langle \dot{W}_{QK}, W_{QK} \rangle = \langle \dot{W}_V, W_V \rangle$$.
 
-Since $\frac{d}{dt}\frac{1}{2}\|W\|_F^2 = \langle \dot{W}, W \rangle$, integrating gives the conservation law. $\square$
+Since $$\frac{d}{dt}\frac{1}{2}\|W\|_F^2 = \langle \dot{W}, W \rangle$$, integrating gives the conservation law. $$\square$$
 
 ## Why This Matters for Syntax vs. Semantics
 
@@ -99,7 +99,7 @@ You can't learn more complex attention patterns without simultaneously learning 
 
 The coupling emerges because both gradients depend on the same underlying attention pattern activations. The gradient with respect to the QK projection involves the attention pattern multiplied by the value projections, while the gradient with respect to V involves the attention pattern multiplied by the prediction error.
 
-This shared dependence creates the coupling: when attention patterns become more complex (higher $\|W_{QK}\|_F$), the gradients necessarily drive value transformations to become more complex as well (higher $\|W_V\|_F$).
+This shared dependence creates the coupling: when attention patterns become more complex (higher $$\|W_{QK}\|_F$$), the gradients necessarily drive value transformations to become more complex as well (higher $$\|W_V\|_F$$).
 
 ## Implications for Transformer Architecture
 
@@ -148,7 +148,3 @@ The conservation law reveals a fundamental mathematical constraint in attention 
 This provides a new lens for understanding transformer training dynamics and suggests that the relationship between syntax and semantics in these models is more mathematically constrained than previously appreciated.
 
 The coupling might be a feature, not a bug - forcing the model to develop coherent attention-value pairs that perform meaningful linguistic functions. Understanding these mathematical principles will be crucial as we build more sophisticated language models.
-
----
-
-*Thanks to conversations with mechanistic interpretability researchers for inspiring this investigation.*
