@@ -36,7 +36,7 @@ $$
 \dot{W}_{QK} = -\eta \nabla_{W_{QK}} \mathcal{L}, \quad \dot{W}_V = -\eta \nabla_{W_V} \mathcal{L}
 $$
 
-Computing the gradients (using matrix calculus identities):
+Computing the gradients (using matrix calculus identities - [can use a calculator](https://www.matrixcalculus.org)):
 
 $$
 \nabla_{W_{QK}} \mathcal{L} = X^T \cdot \text{diag}(\delta(t)) \cdot \text{relu}(\text{sign}(X W_{QK} X^T)) \cdot \text{diag}(X W_V) \cdot X
