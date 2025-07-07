@@ -16,7 +16,7 @@ This question matters because if different reasonable observers disagree substan
 
 The paper's approach to classifying scaling behaviors is surprisingly informal. They define predictable scaling as fitting "closely to a linear functional form after, for example, exponentiating the cross-entropy loss" and state that "y = a exp{c·x} + b" represents the best case scenario where "y is the task performance metric and x is the validation perplexity."
 
-But how closely is "closely"? The paper provides no quantitative thresholds, no R² cutoffs, no criteria for acceptable deviation. Instead, they simply assert that Figure 5 shows the 18 tasks with "smooth, predictable improvement" while Figures 6-10 show the remaining 28 tasks grouped into various "degenerate scaling behaviors."
+But how closely is "closely"? The paper provides no quantitative thresholds, no R² cutoffs, no criteria for acceptable deviation. Instead, they simply assert that Figure 5 shows the 18 tasks with "smooth, predictable improvement" while Figures 6-10 show the remaining 28 tasks grouped into various "degenerate scaling behaviors." These categories include: predictable, non-monotonic, noisy scaling, inverse scaling, trendless, and breakthrough. 
 
 This subjective visual inspection has well-known problems in measurement theory. Different observers bring different priors, different tolerance for noise, and different implicit definitions of what constitutes a "trend." Without explicit criteria, we're building scientific conclusions on quicksand.
 
@@ -44,30 +44,35 @@ This has a maximum value of 0.5, so I multiply by 2 to put it on a 0-1 scale whe
 #### What the Numbers Reveal
 
 The agreement matrix tells a fascinating story:
-
-|           | human | c1   | b1   | b2   | s3   |
-|-----------|-------|------|------|------|------|
-| **human** | 1.00  | 0.01 | 0.44 | 0.46 | 0.52 |
-| **c1**    | 0.01  | 1.00 | 0.01 | 0.03 | 0.13 |
-| **b1**    | 0.44  | 0.01 | 1.00 | 0.91 | 0.70 |
-| **b2**    | 0.46  | 0.03 | 0.91 | 1.00 | 0.70 |
-| **s3**    | 0.52  | 0.13 | 0.70 | 0.70 | 1.00 |
+|           |  human  |    c1   |    b1   |    b2   |    s3   |
+|-----------|:-------:|:-------:|:-------:|:-------:|:-------:|
+| **human** |  1.00   |  0.01   |  0.44   |  0.46   |  0.52   |
+| **c1**    |  0.01   |  1.00   |  0.01   |  0.03   |  0.13   |
+| **b1**    |  0.44   |  0.01   |  1.00   |  0.91   |  0.70   |
+| **b2**    |  0.46   |  0.03   |  0.91   |  1.00   |  0.70   |
+| **s3**    |  0.52   |  0.13   |  0.70   |  0.70   |  1.00   |
 
 Looking at average agreement with other annotators:
 
 | Annotator | Average Agreement |
-|-----------|------------------|
-| human     | 0.36            |
-| c1        | 0.05            |
-| b1        | 0.51            |
-| b2        | 0.52            |
-| s3        | 0.51            |
+|:---------:|:-----------------:|
+|   human   |       0.36        |
+|     c1    |       0.05        |
+|     b1    |       0.51        |
+|     b2    |       0.52        |
+|     s3    |       0.51        |
 
 #### What This Means
 
 Several striking patterns emerge:
 
 **Different reasonable interpretations yield wildly different results.** The ultra-strict c1 prompt identifies only 3 plots as predictable - a far cry from the paper's 18. Even the prompts (b1/b2/s3) that explicitly try to follow the paper's definition of "linear after transformation" identify around 25-27 plots as predictable, not 18.
+
+First, the AI annotators aren't just monotonically expanding the set of predictable plots. Since `s3` scores highest in our framework we will walk through some examples. The authors label both plots below as "predictable" while AI labels only CoQA as "predictable".
+
+![AI-Human disagreement from the "predictable" set](https://i.ibb.co/Mxpjh41B/Screenshot-2025-07-07-at-3-06-56-PM.png)
+
+Second, the labels elsewhere are reasonable. The `s3` prompt labels all plots the authors categorize as "trendless" as "not predictable". The "breakthrough" (sigmoid) plots are labeled "predictable". Some of the "noisy scaling" plots are labeled "predictable", but not the  most noisy ones. 
 
 **The human rule isn't reproducible.** The paper's classification achieves only moderate agreement (0.36-0.52) with systematic attempts to apply their own stated definition. This suggests their visual grouping into figures may have been influenced by factors beyond the stated "linear after transformation" criterion.
 
