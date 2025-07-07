@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Can Humans Reliably Detect Scaling Laws: A Reality Check
+title: Can Humans Reliably Detect Scaling Laws - A Reality Check
 published: true
 ---
 
