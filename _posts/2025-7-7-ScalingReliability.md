@@ -8,8 +8,6 @@ published: true
 
 [Scaling Laws Are Unreliable for Downstream Tasks: A Reality Check](https://arxiv.org/abs/2507.00885)
 
----
-
 A recent paper by Lourie, Hu, and Cho made waves by claiming that downstream scaling laws only work reliably 39% of the time. Their meta-analysis of 46 tasks found that most exhibit "degenerate" scaling behaviors - inverse scaling, nonmonotonic patterns, or just noise rather than the clean linear relationships we'd hope for. But as I dug into their methodology, a fundamental question emerged: how reliable is the classification of "predictable" versus "unpredictable" scaling itself?
 
 This question matters because if different reasonable observers disagree substantially on which plots show predictable scaling, then the headline "39%" figure becomes meaningless. It's like claiming "39% of paintings are beautiful" without establishing any agreement on what constitutes beauty.
