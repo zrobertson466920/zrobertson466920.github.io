@@ -75,7 +75,7 @@ First, the AI annotators aren't just monotonically expanding the set of predicta
 
 Second, the labels elsewhere are reasonable. The `s3` prompt labels all plots the authors categorize as "trendless" as "not predictable". The "breakthrough" (sigmoid) plots are labeled "predictable". Some of the "noisy scaling" plots are labeled "predictable", but not the  most noisy ones. 
 
-**The human rule isn't reproducible.** The paper's classification achieves only moderate agreement (0.36-0.52) with systematic attempts to apply their own stated definition. Another interpretation, is that a perfect classifier would be able to tell if a given pair of labels came from a human vs. AI with probability (0.68-0.76). This suggests their visual grouping into figures may have been influenced by factors beyond the stated "linear after transformation" criterion.
+**The human rule isn't reproducible.** The paper's classification achieves only moderate agreement (0.36-0.52) with systematic attempts to apply their own stated definition. Another (variational) interpretation of the TVD-MI score is that a perfect classifier would be able to tell if a given pair of labels came from a human vs. AI with probability (0.68-0.76). This suggests their visual grouping into figures may have been influenced by factors beyond the stated "linear after transformation" criterion.
 
 **Standardized prompts achieve high mutual agreement.** The b1 and b2 prompts agree 91% of the time despite being run independently, showing that explicit criteria can produce reproducible classifications. They form a tight cluster with s3 (around 70% mutual agreement), suggesting they're capturing a coherent notion of "predictable scaling."
 
