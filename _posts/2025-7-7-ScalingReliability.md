@@ -55,13 +55,13 @@ The agreement matrix tells a fascinating story:
 
 Looking at average agreement with other annotators:
 
-| Annotator | _Average Agreement |
-|:---------:|:-----------------:|
-|   human   |       0.36        |
-|     c1    |       0.05        |
-|     b1    |       0.51        |
-|     b2    |       0.52        |
-|     s3    |       0.51        |
+| Annotator | Average Agreement |
+|-----------|-------------------|
+| human     | &nbsp;0.36&nbsp;  |
+| c1        | &nbsp;0.05&nbsp;  |
+| b1        | &nbsp;0.51&nbsp;  |
+| b2        | &nbsp;0.52&nbsp;  |
+| s3        | &nbsp;0.51&nbsp;  |
 
 #### What This Means
 
