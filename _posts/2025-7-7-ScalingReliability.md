@@ -4,7 +4,7 @@ title: Can Humans Reliably Detect Scaling Laws - A Reality Check
 published: true
 ---
 
-*Taking a measurement theory approach to examine one human rule and three GPT-4o prompts*
+*Taking a measurement theory approach to examine one human rule and three GPT-o3 prompts*
 
 [Scaling Laws Are Unreliable for Downstream Tasks: A Reality Check](https://arxiv.org/abs/2507.00885)
 
