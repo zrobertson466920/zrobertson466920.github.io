@@ -45,17 +45,17 @@ This has a maximum value of 0.5, so I multiply by 2 to put it on a 0-1 scale whe
 
 The agreement matrix tells a fascinating story:
 
-|           |  human  |    c1   |    b1   |    b2   |    s3   |
+|           |  _human  |    _c1   |    _b1   |    _b2   |    _s3   |
 |-----------|:-------:|:-------:|:-------:|:-------:|:-------:|
-| **human** |  1.00 \  |  0.01 \  |  0.44 \  |  0.46 \  |  0.52 \  |
-| **c1**    |  0.01 \  |  1.00  \ |  0.01 \  |  0.03 \  |  0.13  \ |
-| **b1**    |  0.44 \  |  0.01 \  |  1.00 \  |  0.91 \  |  0.70 \  |
-| **b2**    |  0.46 \  |  0.03 \  |  0.91 \  |  1.00 \  |  0.70 \  |
-| **s3**    |  0.52 \  |  0.13  \ |  0.70 \  |  0.70  \ |  1.00 \  |
+| **human** |  1.00   |  0.01   |  0.44   |  0.46   |  0.52   |
+| **c1**    |  0.01   |  1.00   |  0.01   |  0.03   |  0.13   |
+| **b1**    |  0.44   |  0.01   |  1.00   |  0.91   |  0.70   |
+| **b2**    |  0.46   |  0.03   |  0.91   |  1.00   |  0.70   |
+| **s3**    |  0.52   |  0.13   |  0.70   |  0.70   |  1.00   |
 
 Looking at average agreement with other annotators:
 
-| Annotator | Average Agreement |
+| Annotator | _Average Agreement |
 |:---------:|:-----------------:|
 |   human   |       0.36        |
 |     c1    |       0.05        |
