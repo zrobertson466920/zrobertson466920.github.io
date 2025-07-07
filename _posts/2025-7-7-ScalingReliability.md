@@ -22,14 +22,16 @@ This subjective visual inspection has well-known problems in measurement theory.
 
 #### The Experiment Setup
 
-I analyzed the same 46 scatter plots from the paper using multiple annotation approaches:
+I analyzed the same 46 scatter plots from the paper by looking at the raw file and extracting the 6 figures they spread their classifications across. I used multiple AI annotation approaches:
 
 * **The human "ground rule"**: Following the paper's classification - everything in their Figure 5 counts as "Predictable" (18 out of 46 plots), while everything else is "Not Predictable."
 
-* **Four GPT-4o prompts** with varying interpretations of "predictable scaling":
+* **Attention-check**: since an AI could possibly hallucinate labels, we verify they were able to read and parse all the figures by having them specify the count and total number of plots labeled predictable. 
+
+* **Four GPT-o3 prompts** with varying interpretations of "predictable scaling":
   * **[c1](https://chatgpt.com/share/686c39ea-d0c0-800c-8dcc-f11e913586e4)** – Ultra-strict criteria requiring monotonic improvement, R² > 0.85, and less than 5% outliers
   * **[b1 and b2](https://chatgpt.com/share/686c39cf-898c-800c-bd9c-d412a700a277)** – Following the paper's definition of "roughly linear after transformation" with explicit count targets
-  * **[s3](https://chatgpt.com/share/6867f0e7-aba4-800c-ae2e-7b58811028e0)** – Same definition as b1/b2 but without specifying expected totals
+  * **[s3](https://chatgpt.com/share/6867f0e7-aba4-800c-ae2e-7b58811028e0)** – Same definition as b1/b2 but without specifying the attention check in the prompt
 
 #### Measuring Agreement
 
