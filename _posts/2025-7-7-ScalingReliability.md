@@ -44,6 +44,7 @@ This has a maximum value of 0.5, so I multiply by 2 to put it on a 0-1 scale whe
 #### What the Numbers Reveal
 
 The agreement matrix tells a fascinating story:
+
 |           |  human  |    c1   |    b1   |    b2   |    s3   |
 |-----------|:-------:|:-------:|:-------:|:-------:|:-------:|
 | **human** |  1.00   |  0.01   |  0.44   |  0.46   |  0.52   |
