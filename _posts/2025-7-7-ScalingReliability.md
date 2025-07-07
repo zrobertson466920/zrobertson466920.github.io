@@ -47,11 +47,11 @@ The agreement matrix tells a fascinating story:
 
 |           |  human  |    c1   |    b1   |    b2   |    s3   |
 |-----------|:-------:|:-------:|:-------:|:-------:|:-------:|
-| **human** |  1.00   |  0.01   |  0.44   |  0.46   |  0.52   |
-| **c1**    |  0.01   |  1.00   |  0.01   |  0.03   |  0.13   |
-| **b1**    |  0.44   |  0.01   |  1.00   |  0.91   |  0.70   |
-| **b2**    |  0.46   |  0.03   |  0.91   |  1.00   |  0.70   |
-| **s3**    |  0.52   |  0.13   |  0.70   |  0.70   |  1.00   |
+| **human** |  1.00 \  |  0.01 \  |  0.44 \  |  0.46 \  |  0.52 \  |
+| **c1**    |  0.01 \  |  1.00  \ |  0.01 \  |  0.03 \  |  0.13  \ |
+| **b1**    |  0.44 \  |  0.01 \  |  1.00 \  |  0.91 \  |  0.70 \  |
+| **b2**    |  0.46 \  |  0.03 \  |  0.91 \  |  1.00 \  |  0.70 \  |
+| **s3**    |  0.52 \  |  0.13  \ |  0.70 \  |  0.70  \ |  1.00 \  |
 
 Looking at average agreement with other annotators:
 
@@ -75,7 +75,7 @@ First, the AI annotators aren't just monotonically expanding the set of predicta
 
 Second, the labels elsewhere are reasonable. The `s3` prompt labels all plots the authors categorize as "trendless" as "not predictable". The "breakthrough" (sigmoid) plots are labeled "predictable". Some of the "noisy scaling" plots are labeled "predictable", but not the  most noisy ones. 
 
-**The human rule isn't reproducible.** The paper's classification achieves only moderate agreement (0.36-0.52) with systematic attempts to apply their own stated definition. This suggests their visual grouping into figures may have been influenced by factors beyond the stated "linear after transformation" criterion.
+**The human rule isn't reproducible.** The paper's classification achieves only moderate agreement (0.36-0.52) with systematic attempts to apply their own stated definition. Another interpretation, is that a perfect classifier would be able to tell if a given pair of labels came from a human vs. AI with probability (0.68-0.76). This suggests their visual grouping into figures may have been influenced by factors beyond the stated "linear after transformation" criterion.
 
 **Standardized prompts achieve high mutual agreement.** The b1 and b2 prompts agree 91% of the time despite being run independently, showing that explicit criteria can produce reproducible classifications. They form a tight cluster with s3 (around 70% mutual agreement), suggesting they're capturing a coherent notion of "predictable scaling."
 
