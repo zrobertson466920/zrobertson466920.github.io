@@ -96,3 +96,16 @@ This analysis points to several ways we could improve how we study scaling laws:
 3. **Don't hide uncertainty in headline numbers.** When "predictable" counts can swing from 3 to 30 depending on reasonable interpretation differences, stating "39%" without confidence intervals is misleading at best.
 
 Until scaling law studies adopt these basic reliability practices from measurement theory, our debates about "emergence" versus "predictability" will be shaped more by labeling conventions than by actual empirical patterns. The field deserves better than arguments built on sand.
+
+If this was useful to you, please consider citing. 
+
+@misc{robertson2025humans,
+  title={Can Humans Reliably Detect Scaling Laws? A Reality Check},
+  author={Robertson, Zachary},
+  year={2025},
+  month={July},
+  institution={Stanford University},
+  url={https://zrobertson466920.github.io/ScalingReliability/},
+  note={Blog post analyzing inter-annotator agreement on scaling law classification using TVD mutual information}
+}
+
