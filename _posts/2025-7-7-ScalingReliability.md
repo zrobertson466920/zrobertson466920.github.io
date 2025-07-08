@@ -99,6 +99,7 @@ Until scaling law studies adopt these basic reliability practices from measureme
 
 If this was useful to you, please consider citing. 
 
+```
 @misc{robertson2025humans,
   title={Can Humans Reliably Detect Scaling Laws? A Reality Check},
   author={Robertson, Zachary},
@@ -108,4 +109,6 @@ If this was useful to you, please consider citing.
   url={https://zrobertson466920.github.io/ScalingReliability/},
   note={Blog post analyzing inter-annotator agreement on scaling law classification using TVD mutual information}
 }
+```
+
 
