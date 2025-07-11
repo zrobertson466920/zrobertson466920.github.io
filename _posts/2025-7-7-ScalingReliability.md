@@ -39,7 +39,7 @@ Information theory gives us an elegant way to quantify annotator reliability. We
 
 $$I_{\mathrm{TVD}}(X;Y)=\tfrac12\!\sum_{i,j}P_{X}(i) P_{Y}(j)\,\bigl|\tfrac{P_{XY}(i,j)}{P_X(i)P_Y(j)}-1\bigr|$$
 
-This has a maximum value of 0.5, so I multiply by 2 to put it on a 0-1 scale where 1 means perfect agreement. Unlike Cohen's kappa, this approach avoids quirky "expected agreement" assumptions and stays firmly grounded in information theory. In fact, it has a mathematically concise interpretation. The TVD-MI score is the accuracy a perfect classifier would be able to achieve when tasked with classifying whether a given pair of labels came from the paired annotations for a given item (to be classified) or randomly paired annotations from independently sampled items at random.
+Unlike Cohen's kappa, this approach avoids quirky "expected agreement" assumptions and stays firmly grounded in information theory. In fact, it has a mathematically concise interpretation. The TVD-MI score is the accuracy (over chance) a perfect classifier would be able to achieve when tasked with classifying whether a given pair of labels came from the paired annotations for a given item (to be classified) or randomly paired annotations from independently sampled items at random. We can then define **reliability** as the gain in accuracy of the classifier achievable based on the mutual information the annotators share rescaled by multiplying by adding one and then dividing by two.
 
 #### What the Results Reveal
 
@@ -86,9 +86,11 @@ First, the AI annotators aren't just monotonically expanding the set of predicta
 
 Second, the labels elsewhere are reasonable. The `s3` prompt labels all plots the authors categorize as "trendless" as "not predictable". The "breakthrough" (sigmoid) plots are labeled "predictable". Some of the "noisy scaling" plots are labeled "predictable", but not the  most noisy ones. 
 
-**The human rule isn't reproducible.** The paper's classification achieves only moderate agreement (0.36-0.52) with systematic attempts to apply their own stated definition. Another (variational) interpretation of the TVD-MI score is that a perfect classifier would be able to tell if a given pair of labels came from a human vs. AI with probability (0.68-0.76). This suggests their visual grouping into figures may have been influenced by factors beyond the stated "linear after transformation" criterion.
+**The human rule isn't reproducible.** The paper's classification achieves only moderate reliability (0.39-0.55) against the simple reference points (b1/b2/s3) we used to apply to directly apply their stated definition. However, against a strict formal baseline the reliabilty was lowest at 0.09. Together, this suggests their visual grouping into figures may have been influenced by factors beyond the stated "linear after transformation" criterion.
 
-**Standardized prompts achieve high mutual agreement.** The b1 and b2 prompts agree 91% of the time despite being run independently, showing that explicit criteria can produce reproducible classifications. They form a tight cluster with s3 (around 70% mutual agreement), suggesting they're capturing a coherent notion of "predictable scaling."
+**Standardized prompts achieve high self-reliability.** The b-method baseline for annotation achieves reliability of 0.73 against itself. This helps us understand despite being run with the same prompt, the annotation process does have meaningful path-dependent behavior. Interestingly, s3 has higher average reliability 0.8 when measured against the b-method.
+
+Altogether, this suggests reasonable interpretations of "predictable scaling" based on their stated definition is less reliable than more. 
 
 #### Why This Matters for the Field
 
