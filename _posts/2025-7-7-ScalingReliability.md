@@ -43,56 +43,16 @@ This has a maximum value of 0.5, so I multiply by 2 to put it on a 0-1 scale whe
 
 #### What the Results Reveal
 
-Here is a full table with annotations:
+We show the classifications by trend-type (as used by the authors) and include full annotations in the appendix.
 
-| Benchmark (image)                                    |  human |   c1  |   b1  |   b2  |   s3  |
-|------------------------------------------------------|--------|-------|-------|-------|-------|
-| BIG-bench: CS Algorithms (breakthrough)              | ❌ | ❌ | ✅ | ✅ | ✅ |
-| PubMed QA Labeled (breakthrough)                     | ❌ | ❌ | ✅ | ✅ | ✅ |
-| AGIEval LSAT LR (inverse)                            | ❌ | ❌ | ❌ | ❌ | ❌ |
-| AGIEval LSAT RC (inverse)                            | ❌ | ❌ | ❌ | ❌ | ❌ |
-| AGIEval SAT English (inverse)                        | ❌ | ❌ | ❌ | ❌ | ❌ |
-| BIG-bench: Elementary Math QA (inverse)              | ❌ | ❌ | ❌ | ❌ | ❌ |
-| BIG-bench: Novel Concepts (noisy)                    | ❌ | ✅ | ✅ | ✅ | ✅ |
-| BIG-bench: Strategy QA (noisy)                       | ❌ | ❌ | ✅ | ✅ | ✅ |
-| BoolQ (noisy)                                        | ❌ | ❌ | ✅ | ✅ | ✅ |
-| LogiQA (noisy)                                       | ❌ | ✅ | ✅ | ✅ | ✅ |
-| Simple Arithmetic (NoSpaces) (noisy)                 | ❌ | ❌ | ❌ | ✅ | ❌ |
-| Simple Arithmetic (WithSpaces) (noisy)               | ❌ | ❌ | ❌ | ✅ | ❌ |
-| SIQA (noisy)                                         | ❌ | ❌ | ✅ | ✅ | ❌ |
-| ARC-Challenge (non-monotonic)                        | ❌ | ❌ | ✅ | ✅ | ✅ |
-| BBQ (non-monotonic)                                  | ❌ | ❌ | ❌ | ❌ | ❌ |
-| BIG-bench: Logical Deduction (non-monotonic)         | ❌ | ❌ | ❌ | ❌ | ❌ |
-| BIG-bench: Strange Stories (non-monotonic)           | ❌ | ❌ | ❌ | ❌ | ❌ |
-| Commonsense QA (non-monotonic)                       | ❌ | ❌ | ❌ | ✅ | ❌ |
-| COPA (non-monotonic)                                 | ❌ | ❌ | ✅ | ✅ | ✅ |
-| ARC-Easy (predictable)                               | ✅ | ❌ | ✅ | ✅ | ✅ |
-| BIG-bench: Conlang Translation (predictable)         | ✅ | ❌ | ❌ | ✅ | ❌ |
-| BIG-bench: Dyck Languages (predictable)              | ✅ | ❌ | ✅ | ✅ | ❌ |
-| BIG-bench: Operators (predictable)                   | ✅ | ❌ | ✅ | ✅ | ✅ |
-| BIG-bench: QA Wikidata (predictable)                 | ✅ | ✅ | ✅ | ✅ | ✅ |
-| BIG-bench: Repeat Copy Logic (predictable)           | ✅ | ❌ | ❌ | ✅ | ❌ |
-| CoQA (predictable)                                   | ✅ | ❌ | ✅ | ✅ | ✅ |
-| HellaSwag (predictable)                              | ✅ | ❌ | ✅ | ✅ | ✅ |
-| HellaSwag (zero-shot) (predictable)                  | ✅ | ❌ | ✅ | ✅ | ✅ |
-| Jeopardy (predictable)                               | ✅ | ❌ | ❌ | ✅ | ✅ |
-| LAMBADA (predictable)                                | ✅ | ❌ | ✅ | ✅ | ✅ |
-| MMLU (5-shot) (predictable)                          | ✅ | ❌ | ✅ | ✅ | ✅ |
-| MMLU (zero-shot) (predictable)                       | ✅ | ❌ | ✅ | ✅ | ✅ |
-| OpenBook QA (predictable)                            | ✅ | ❌ | ✅ | ✅ | ✅ |
-| PIQA (predictable)                                   | ✅ | ❌ | ✅ | ✅ | ✅ |
-| SQuAD (predictable)                                  | ✅ | ❌ | ✅ | ✅ | ✅ |
-| Winograd (predictable)                               | ✅ | ❌ | ✅ | ✅ | ✅ |
-| WinoGrande (predictable)                             | ✅ | ❌ | ✅ | ✅ | ✅ |
-| AGIEval LSAT AR (trendless)                          | ❌ | ❌ | ❌ | ❌ | ❌ |
-| BIG-bench: Conceptual Combinations (trendless)       | ❌ | ❌ | ❌ | ❌ | ❌ |
-| BIG-bench: Language Identification (trendless)       | ❌ | ❌ | ❌ | ❌ | ❌ |
-| BIG-bench: Misconceptions (trendless)                | ❌ | ❌ | ❌ | ❌ | ❌ |
-| BIG-bench: Understanding Fables (trendless)          | ❌ | ❌ | ❌ | ❌ | ❌ |
-| Enterprise PII Classification (trendless)            | ❌ | ❌ | ❌ | ❌ | ❌ |
-| MathQA (trendless)                                   | ❌ | ❌ | ❌ | ❌ | ❌ |
-| WinoGender MC: Female (trendless)                    | ❌ | ❌ | ❌ | ❌ | ❌ |
-| WinoGender MC: Male (trendless)                      | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Trend type (total)             |  human      |   c1        |   b1        |   b2        |   s3        |
+|--------------------------------|-------------|-------------|-------------|-------------|-------------|
+| 💥 Breakthrough&nbsp;(2)        | &nbsp;0 / 2&nbsp; | &nbsp;0 / 2&nbsp; | &nbsp;2 / 2&nbsp; | &nbsp;2 / 2&nbsp; | &nbsp;2 / 2&nbsp; |
+| 🔄 Inverse&nbsp;(4)             | &nbsp;0 / 4&nbsp; | &nbsp;0 / 4&nbsp; | &nbsp;0 / 4&nbsp; | &nbsp;0 / 4&nbsp; | &nbsp;0 / 4&nbsp; |
+| 📊 Noisy&nbsp;(7)               | &nbsp;0 / 7&nbsp; | &nbsp;2 / 7&nbsp; | &nbsp;5 / 7&nbsp; | &nbsp;7 / 7&nbsp; | &nbsp;4 / 7&nbsp; |
+| 🔀 Non-monotonic&nbsp;(6)       | &nbsp;0 / 6&nbsp; | &nbsp;0 / 6&nbsp; | &nbsp;2 / 6&nbsp; | &nbsp;3 / 6&nbsp; | &nbsp;2 / 6&nbsp; |
+| 📈 Predictable&nbsp;(18)        | &nbsp;18 / 18&nbsp; | &nbsp;1 / 18&nbsp; | &nbsp;15 / 18&nbsp; | &nbsp;18 / 18&nbsp; | &nbsp;15 / 18&nbsp; |
+| ➖ Trendless&nbsp;(9)           | &nbsp;0 / 9&nbsp; | &nbsp;0 / 9&nbsp; | &nbsp;0 / 9&nbsp; | &nbsp;0 / 9&nbsp; | &nbsp;0 / 9&nbsp; |
 
 We then calculate the reliability matrix which forms the basis for making valid interpretations about the results:
 
@@ -161,5 +121,58 @@ If this was useful to you, please consider citing.
   note={Blog post analyzing inter-annotator agreement on scaling law classification using TVD mutual information}
 }
 ```
+
+### Appendix
+
+Here is the full table with annotations:
+
+| Benchmark (image)                                    |  human |   c1  |   b1  |   b2  |   s3  |
+|------------------------------------------------------|--------|-------|-------|-------|-------|
+| BIG-bench: CS Algorithms (breakthrough)              | ❌ | ❌ | ✅ | ✅ | ✅ |
+| PubMed QA Labeled (breakthrough)                     | ❌ | ❌ | ✅ | ✅ | ✅ |
+| AGIEval LSAT LR (inverse)                            | ❌ | ❌ | ❌ | ❌ | ❌ |
+| AGIEval LSAT RC (inverse)                            | ❌ | ❌ | ❌ | ❌ | ❌ |
+| AGIEval SAT English (inverse)                        | ❌ | ❌ | ❌ | ❌ | ❌ |
+| BIG-bench: Elementary Math QA (inverse)              | ❌ | ❌ | ❌ | ❌ | ❌ |
+| BIG-bench: Novel Concepts (noisy)                    | ❌ | ✅ | ✅ | ✅ | ✅ |
+| BIG-bench: Strategy QA (noisy)                       | ❌ | ❌ | ✅ | ✅ | ✅ |
+| BoolQ (noisy)                                        | ❌ | ❌ | ✅ | ✅ | ✅ |
+| LogiQA (noisy)                                       | ❌ | ✅ | ✅ | ✅ | ✅ |
+| Simple Arithmetic (NoSpaces) (noisy)                 | ❌ | ❌ | ❌ | ✅ | ❌ |
+| Simple Arithmetic (WithSpaces) (noisy)               | ❌ | ❌ | ❌ | ✅ | ❌ |
+| SIQA (noisy)                                         | ❌ | ❌ | ✅ | ✅ | ❌ |
+| ARC-Challenge (non-monotonic)                        | ❌ | ❌ | ✅ | ✅ | ✅ |
+| BBQ (non-monotonic)                                  | ❌ | ❌ | ❌ | ❌ | ❌ |
+| BIG-bench: Logical Deduction (non-monotonic)         | ❌ | ❌ | ❌ | ❌ | ❌ |
+| BIG-bench: Strange Stories (non-monotonic)           | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Commonsense QA (non-monotonic)                       | ❌ | ❌ | ❌ | ✅ | ❌ |
+| COPA (non-monotonic)                                 | ❌ | ❌ | ✅ | ✅ | ✅ |
+| ARC-Easy (predictable)                               | ✅ | ❌ | ✅ | ✅ | ✅ |
+| BIG-bench: Conlang Translation (predictable)         | ✅ | ❌ | ❌ | ✅ | ❌ |
+| BIG-bench: Dyck Languages (predictable)              | ✅ | ❌ | ✅ | ✅ | ❌ |
+| BIG-bench: Operators (predictable)                   | ✅ | ❌ | ✅ | ✅ | ✅ |
+| BIG-bench: QA Wikidata (predictable)                 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| BIG-bench: Repeat Copy Logic (predictable)           | ✅ | ❌ | ❌ | ✅ | ❌ |
+| CoQA (predictable)                                   | ✅ | ❌ | ✅ | ✅ | ✅ |
+| HellaSwag (predictable)                              | ✅ | ❌ | ✅ | ✅ | ✅ |
+| HellaSwag (zero-shot) (predictable)                  | ✅ | ❌ | ✅ | ✅ | ✅ |
+| Jeopardy (predictable)                               | ✅ | ❌ | ❌ | ✅ | ✅ |
+| LAMBADA (predictable)                                | ✅ | ❌ | ✅ | ✅ | ✅ |
+| MMLU (5-shot) (predictable)                          | ✅ | ❌ | ✅ | ✅ | ✅ |
+| MMLU (zero-shot) (predictable)                       | ✅ | ❌ | ✅ | ✅ | ✅ |
+| OpenBook QA (predictable)                            | ✅ | ❌ | ✅ | ✅ | ✅ |
+| PIQA (predictable)                                   | ✅ | ❌ | ✅ | ✅ | ✅ |
+| SQuAD (predictable)                                  | ✅ | ❌ | ✅ | ✅ | ✅ |
+| Winograd (predictable)                               | ✅ | ❌ | ✅ | ✅ | ✅ |
+| WinoGrande (predictable)                             | ✅ | ❌ | ✅ | ✅ | ✅ |
+| AGIEval LSAT AR (trendless)                          | ❌ | ❌ | ❌ | ❌ | ❌ |
+| BIG-bench: Conceptual Combinations (trendless)       | ❌ | ❌ | ❌ | ❌ | ❌ |
+| BIG-bench: Language Identification (trendless)       | ❌ | ❌ | ❌ | ❌ | ❌ |
+| BIG-bench: Misconceptions (trendless)                | ❌ | ❌ | ❌ | ❌ | ❌ |
+| BIG-bench: Understanding Fables (trendless)          | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Enterprise PII Classification (trendless)            | ❌ | ❌ | ❌ | ❌ | ❌ |
+| MathQA (trendless)                                   | ❌ | ❌ | ❌ | ❌ | ❌ |
+| WinoGender MC: Female (trendless)                    | ❌ | ❌ | ❌ | ❌ | ❌ |
+| WinoGender MC: Male (trendless)                      | ❌ | ❌ | ❌ | ❌ | ❌ |
 
 
