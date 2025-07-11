@@ -33,35 +33,86 @@ I analyzed the same 46 scatter plots from the paper by looking at the raw file a
   * **[b1 and b2](https://chatgpt.com/share/686c39cf-898c-800c-bd9c-d412a700a277)** – Following the paper's definition of "roughly linear after transformation" with explicit count targets
   * **[s3](https://chatgpt.com/share/6867f0e7-aba4-800c-ae2e-7b58811028e0)** – Same definition as b1/b2 but without specifying the attention check in the prompt
 
-#### Measuring Agreement
+#### Measuring Reliability
 
-Information theory gives us an elegant way to quantify annotator agreement. We can treat each annotator's labels as a random variable and calculate an f-mutual-information score between them. Using total-variation f-divergence (TVD) gives us:
+Information theory gives us an elegant way to quantify annotator reliability. We can treat each annotator's labels of the items as a random variable and calculate an f-mutual-information score between them. Using total-variation f-divergence (TVD) gives us:
 
-$$I_{\mathrm{TVD}}(X;Y)=\tfrac12\!\sum_{i,j}P_{XY}(i,j)\,\bigl|\tfrac{P_{XY}(i,j)}{P_X(i)P_Y(j)}-1\bigr|$$
+$$I_{\mathrm{TVD}}(X;Y)=\tfrac12\!\sum_{i,j}P_{X}(i) P_{Y}(j)\,\bigl|\tfrac{P_{XY}(i,j)}{P_X(i)P_Y(j)}-1\bigr|$$
 
-This has a maximum value of 0.5, so I multiply by 2 to put it on a 0-1 scale where 1 means perfect agreement. Unlike Cohen's kappa, this approach avoids quirky "expected agreement" assumptions and stays firmly grounded in information theory.
+This has a maximum value of 0.5, so I multiply by 2 to put it on a 0-1 scale where 1 means perfect agreement. Unlike Cohen's kappa, this approach avoids quirky "expected agreement" assumptions and stays firmly grounded in information theory. In fact, it has a mathematically concise interpretation. The TVD-MI score is the accuracy a perfect classifier would be able to achieve when tasked with classifying whether a given pair of labels came from the paired annotations for a given item (to be classified) or randomly paired annotations from independently sampled items at random.
 
-#### What the Numbers Reveal
+#### What the Results Reveal
 
-The agreement matrix tells a fascinating story:
+Here is a full table with annotations:
+
+| Benchmark (image)                                    |  human |   c1  |   b1  |   b2  |   s3  |
+|------------------------------------------------------|--------|-------|-------|-------|-------|
+| BIG-bench: CS Algorithms (breakthrough)              | ❌ | ❌ | ✅ | ✅ | ✅ |
+| PubMed QA Labeled (breakthrough)                     | ❌ | ❌ | ✅ | ✅ | ✅ |
+| AGIEval LSAT LR (inverse)                            | ❌ | ❌ | ❌ | ❌ | ❌ |
+| AGIEval LSAT RC (inverse)                            | ❌ | ❌ | ❌ | ❌ | ❌ |
+| AGIEval SAT English (inverse)                        | ❌ | ❌ | ❌ | ❌ | ❌ |
+| BIG-bench: Elementary Math QA (inverse)              | ❌ | ❌ | ❌ | ❌ | ❌ |
+| BIG-bench: Novel Concepts (noisy)                    | ❌ | ✅ | ✅ | ✅ | ✅ |
+| BIG-bench: Strategy QA (noisy)                       | ❌ | ❌ | ✅ | ✅ | ✅ |
+| BoolQ (noisy)                                        | ❌ | ❌ | ✅ | ✅ | ✅ |
+| LogiQA (noisy)                                       | ❌ | ✅ | ✅ | ✅ | ✅ |
+| Simple Arithmetic (NoSpaces) (noisy)                 | ❌ | ❌ | ❌ | ✅ | ❌ |
+| Simple Arithmetic (WithSpaces) (noisy)               | ❌ | ❌ | ❌ | ✅ | ❌ |
+| SIQA (noisy)                                         | ❌ | ❌ | ✅ | ✅ | ❌ |
+| ARC-Challenge (non-monotonic)                        | ❌ | ❌ | ✅ | ✅ | ✅ |
+| BBQ (non-monotonic)                                  | ❌ | ❌ | ❌ | ❌ | ❌ |
+| BIG-bench: Logical Deduction (non-monotonic)         | ❌ | ❌ | ❌ | ❌ | ❌ |
+| BIG-bench: Strange Stories (non-monotonic)           | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Commonsense QA (non-monotonic)                       | ❌ | ❌ | ❌ | ✅ | ❌ |
+| COPA (non-monotonic)                                 | ❌ | ❌ | ✅ | ✅ | ✅ |
+| ARC-Easy (predictable)                               | ✅ | ❌ | ✅ | ✅ | ✅ |
+| BIG-bench: Conlang Translation (predictable)         | ✅ | ❌ | ❌ | ✅ | ❌ |
+| BIG-bench: Dyck Languages (predictable)              | ✅ | ❌ | ✅ | ✅ | ❌ |
+| BIG-bench: Operators (predictable)                   | ✅ | ❌ | ✅ | ✅ | ✅ |
+| BIG-bench: QA Wikidata (predictable)                 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| BIG-bench: Repeat Copy Logic (predictable)           | ✅ | ❌ | ❌ | ✅ | ❌ |
+| CoQA (predictable)                                   | ✅ | ❌ | ✅ | ✅ | ✅ |
+| HellaSwag (predictable)                              | ✅ | ❌ | ✅ | ✅ | ✅ |
+| HellaSwag (zero-shot) (predictable)                  | ✅ | ❌ | ✅ | ✅ | ✅ |
+| Jeopardy (predictable)                               | ✅ | ❌ | ❌ | ✅ | ✅ |
+| LAMBADA (predictable)                                | ✅ | ❌ | ✅ | ✅ | ✅ |
+| MMLU (5-shot) (predictable)                          | ✅ | ❌ | ✅ | ✅ | ✅ |
+| MMLU (zero-shot) (predictable)                       | ✅ | ❌ | ✅ | ✅ | ✅ |
+| OpenBook QA (predictable)                            | ✅ | ❌ | ✅ | ✅ | ✅ |
+| PIQA (predictable)                                   | ✅ | ❌ | ✅ | ✅ | ✅ |
+| SQuAD (predictable)                                  | ✅ | ❌ | ✅ | ✅ | ✅ |
+| Winograd (predictable)                               | ✅ | ❌ | ✅ | ✅ | ✅ |
+| WinoGrande (predictable)                             | ✅ | ❌ | ✅ | ✅ | ✅ |
+| AGIEval LSAT AR (trendless)                          | ❌ | ❌ | ❌ | ❌ | ❌ |
+| BIG-bench: Conceptual Combinations (trendless)       | ❌ | ❌ | ❌ | ❌ | ❌ |
+| BIG-bench: Language Identification (trendless)       | ❌ | ❌ | ❌ | ❌ | ❌ |
+| BIG-bench: Misconceptions (trendless)                | ❌ | ❌ | ❌ | ❌ | ❌ |
+| BIG-bench: Understanding Fables (trendless)          | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Enterprise PII Classification (trendless)            | ❌ | ❌ | ❌ | ❌ | ❌ |
+| MathQA (trendless)                                   | ❌ | ❌ | ❌ | ❌ | ❌ |
+| WinoGender MC: Female (trendless)                    | ❌ | ❌ | ❌ | ❌ | ❌ |
+| WinoGender MC: Male (trendless)                      | ❌ | ❌ | ❌ | ❌ | ❌ |
+
+We then calculate the reliability matrix which forms the basis for making valid interpretations about the results:
 
 |           |  human  |   c1    |   b1    |   b2    |   s3    |
 |-----------|---------|---------|---------|---------|---------|
-| **human** | &nbsp;1.00&nbsp; | &nbsp;0.01&nbsp; | &nbsp;0.44&nbsp; | &nbsp;0.46&nbsp; | &nbsp;0.52&nbsp; |
-| **c1**    | &nbsp;0.01&nbsp; | &nbsp;1.00&nbsp; | &nbsp;0.01&nbsp; | &nbsp;0.03&nbsp; | &nbsp;0.13&nbsp; |
-| **b1**    | &nbsp;0.44&nbsp; | &nbsp;0.01&nbsp; | &nbsp;1.00&nbsp; | &nbsp;0.91&nbsp; | &nbsp;0.70&nbsp; |
-| **b2**    | &nbsp;0.46&nbsp; | &nbsp;0.03&nbsp; | &nbsp;0.91&nbsp; | &nbsp;1.00&nbsp; | &nbsp;0.70&nbsp; |
-| **s3**    | &nbsp;0.52&nbsp; | &nbsp;0.13&nbsp; | &nbsp;0.70&nbsp; | &nbsp;0.70&nbsp; | &nbsp;1.00&nbsp; |
+| **human** | &nbsp;0.95&nbsp; | &nbsp;0.02&nbsp; | &nbsp;0.49&nbsp; | &nbsp;0.54&nbsp; | &nbsp;0.52&nbsp; |
+| **c1**    | &nbsp;0.02&nbsp; | &nbsp;0.24&nbsp; | &nbsp;0.12&nbsp; | &nbsp;0.09&nbsp; | &nbsp;0.13&nbsp; |
+| **b1**    | &nbsp;0.49&nbsp; | &nbsp;0.12&nbsp; | &nbsp;1.00&nbsp; | &nbsp;0.73&nbsp; | &nbsp;0.87&nbsp; |
+| **b2**    | &nbsp;0.54&nbsp; | &nbsp;0.09&nbsp; | &nbsp;0.73&nbsp; | &nbsp;0.91&nbsp; | &nbsp;0.70&nbsp; |
+| **s3**    | &nbsp;0.52&nbsp; | &nbsp;0.13&nbsp; | &nbsp;0.87&nbsp; | &nbsp;0.70&nbsp; | &nbsp;1.00&nbsp; |
 
-Looking at average agreement with other annotators:
+Finally, we can look at the mean reliability of each annotator:
 
-| Annotator | Average Agreement |
-|-----------|-------------------|
-| human     | &nbsp;0.36&nbsp;  |
-| c1        | &nbsp;0.05&nbsp;  |
-| b1        | &nbsp;0.51&nbsp;  |
-| b2        | &nbsp;0.52&nbsp;  |
-| s3        | &nbsp;0.51&nbsp;  |
+| annotator | Σ row | avg. reliability |
+|-----------|-------|----------------|
+| human     | &nbsp;1.57&nbsp; | &nbsp;0.39&nbsp; |
+| c1        | &nbsp;0.36&nbsp; | &nbsp;0.09&nbsp; |
+| b1        | &nbsp;2.21&nbsp; | &nbsp;0.55&nbsp; |
+| b2        | &nbsp;2.06&nbsp; | &nbsp;0.51&nbsp; |
+| s3        | &nbsp;2.22&nbsp; | &nbsp;0.55&nbsp; |
 
 #### What This Means
 
@@ -71,7 +122,7 @@ Several striking patterns emerge:
 
 First, the AI annotators aren't just monotonically expanding the set of predictable plots. Since `s3` scores highest in our framework we will walk through some examples. The authors label both plots below as "predictable" while AI labels only CoQA as "predictable".
 
-![AI-Human disagreement from the "predictable" set](https://i.ibb.co/Mxpjh41B/Screenshot-2025-07-07-at-3-06-56-PM.png)
+![AI-Human disagreement from the "predictable" set](https://i.ibb.co/b5gNjXtj/Screenshot-2025-07-10-at-5-58-15-PM.png)
 
 Second, the labels elsewhere are reasonable. The `s3` prompt labels all plots the authors categorize as "trendless" as "not predictable". The "breakthrough" (sigmoid) plots are labeled "predictable". Some of the "noisy scaling" plots are labeled "predictable", but not the  most noisy ones. 
 
