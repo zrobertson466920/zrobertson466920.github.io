@@ -2,25 +2,44 @@
 layout: page
 title: About
 permalink: /about/
+description: Stanford CS PhD developing information-theoretic mechanisms for evaluating AI systems without ground truth.
 ---
 
-I am a CS PhD student working with Sanmi Koyejo in [STAIR lab](https://stair.cs.stanford.edu), where we are working on trustworthy AI. My research focuses on developing scalable oversight mechanisms and aligning AI systems with human preferences, drawing from mechanism design, information theory, and complex systems to create principled frameworks for human-AI collaboration.
+I'm a CS PhD at Stanford working on **scalable oversight**—information-theoretic mechanisms to evaluate AI systems **without ground truth**, with guarantees under strategic manipulation.
 
-Recently, I developed information-theoretic mechanisms for evaluating AI systems without ground truth, proving that f-mutual information measures uniquely resist gaming while maintaining high discrimination between faithful and deceptive agents. This work demonstrates 10-100× better robustness to adversarial manipulation than current LLM judges and has attracted significant attention from the research community. See our [recent work](https://www.arxiv.org/abs/2508.05469) featured on arXiv's front page, or watch this [2-minute explanation](https://www.linkedin.com/posts/florian-h%C3%B6nicke-b902b6aa_icml-icml24-icml2024-activity-7224064255677849601-wdgS?utm_source=share&utm_medium=member_desktop) that caught the attention of AI industry leaders.
+### Research
+My recent work introduces an information-theoretic framework for **black-box LLM evaluation without ground truth**, bridging mechanism design and practical evaluation. In theory and experiments, the approach yields **10–100× higher robustness** to adversarial manipulation than prior methods ([arXiv:2508.05469](https://www.arxiv.org/abs/2508.05469), Aug 2025). In submission; received feedback from mechanism design experts (e.g., [Yuqing Kong](https://cfcs.pku.edu.cn/yuqkong/)).
 
-Prior to Stanford, I obtained a masters in CS from UIUC and a bachelor's in Computational and Applied Mathematics from University of Chicago. I have gained diverse research experience through internships at Google, where I designed tractable surrogates for welfare maximization with applications in ad click-through-rate prediction; Lam Research, optimizing semiconductor wafer production using reinforcement learning; and the Robot Intelligence through Perception Lab at TTIC, working on sparse-depth completion and natural language instruction following for robotic manipulation.
+**Field response.** Within weeks of the arXiv release, several labs initiated alternative evaluation platforms—underscoring the urgency of this direction.
 
-[CV](https://github.com/zrobertson466920/zrobertson466920.github.io/blob/master/Awesome_CV-3.pdf)
+### Impact & Recognition
+- **Early adoption:** ICML 2024 highlight; initial production deployments ([LinkedIn](https://www.linkedin.com/posts/florian-h%C3%B6nicke-b902b6aa_icml-icml24-icml2024-activity-7224064255677849601-wdgS))
+- **Academic influence:** Helped catalyze new lines of work on scalable oversight across multiple institutions
+- **Open science:** Preregistration ([OSF](https://osf.io/c7pum)), code, and complete proofs
 
-### Contact me
+### Research Leadership & Funding
+- **Lead author and primary researcher**, OpenAI Superalignment Fast Grant ($500k, 2024) — conceived, wrote, and secured the agenda; executed framework from proposal to validation
+- **Advocacy:** Led *WellLabeled* (Stanford HAI) on data annotation worker rights; interviews with Turkopticon, Scale AI, and OpenAI; featured by Stanford HAI ([article + video](https://hai.stanford.edu/news/exploring-complex-ethical-challenges-data-annotation), Jul 2024) and invited talk at FloodGate.
+- **First-author** theoretical and empirical contributions connecting mechanism design to ML evaluation
 
+### Background (select)
+- **Theory** — BS, Computational & Applied Math (UChicago)
+- **Systems** — MS, CS (UIUC): metric elicitation & evaluation systems
+- **Industry** — Google (ads welfare optimization); Lam Research (RL for semiconductor process control)
+- **Research** — Toyota Technological Institute (perception & language grounding)
+
+### News
+- **Aug 2025** — First-author paper on evaluation mechanisms featured on arXiv front page
+- **July–Dec 2024** — Invited talks: Max Planck Institute for Intelligent Systems; FloodGate
+- **April 2024** — OpenAI Superalignment Fast Grant awarded ($500k)
+- **2023–2024** — Led WellLabeled advocacy group on data annotation worker rights at Stanford HAI
+
+[CV](https://github.com/zrobertson466920/zrobertson466920.github.io/blob/master/Awesome_CV-3.pdf) · [Google Scholar](https://scholar.google.com/citations?user=769PIisAAAAJ&hl=en) · [GitHub](https://github.com/zrobertson466920)
+
+### Contact
 [zroberts@stanford.edu](mailto:zroberts@stanford.edu)
 
-### Recent Highlights
-
-- Paper on LLM evaluation mechanisms featured on arXiv ML front page (70k+ views)
-- Lead author of successful OpenAI Superalignment Fast Grant ($500k) 
-- Invited talks at Max Planck Institute for Intelligent Systems and FloodGate
+_Last updated: August 2025._
 
 ### Publications
 
