@@ -18,26 +18,26 @@ My recent work introduces an information-theoretic framework for **black-box LLM
 - **Open science:** Preregistration ([OSF](https://osf.io/c7pum)), code, and complete proofs
 
 ### Research Leadership & Funding
-- **Lead author and primary researcher**, OpenAI Superalignment Fast Grant ($500k, 2024) — conceived, wrote, and secured the agenda; executed framework from proposal to validation
+- **Lead author and primary researcher**, OpenAI Superalignment Fast Grant ($500k, 2024). I conceived, wrote, and secured the agenda; executed framework from proposal to validation
 - **Advocacy:** Led *WellLabeled* (Stanford HAI) on data annotation worker rights; interviews with Turkopticon, Scale AI, and OpenAI; featured by Stanford HAI ([article + video](https://hai.stanford.edu/news/exploring-complex-ethical-challenges-data-annotation), Jul 2024) and invited talk at FloodGate.
 - **First-author** theoretical and empirical contributions connecting mechanism design to ML evaluation
 
 ### Background (select)
-- **Theory** — BS, Computational & Applied Math (UChicago)
-- **Systems** — MS, CS (UIUC): metric elicitation & evaluation systems
-- **Industry** — Google (ads welfare optimization); Lam Research (RL for semiconductor process control)
-- **Research** — Toyota Technological Institute (perception & language grounding)
+- **Theory:** BS, Computational & Applied Math (UChicago)
+- **Systems:** MS, CS (UIUC): metric elicitation & evaluation systems
+- **Industry:** Google (ads welfare optimization); Lam Research (RL for semiconductor process control)
+- **Research:** Toyota Technological Institute (perception & language grounding)
 
 ### News
-- **Aug 2025** — First-author paper on evaluation mechanisms featured on arXiv front page
-- **July–Dec 2024** — Invited talks: Max Planck Institute for Intelligent Systems; FloodGate
-- **April 2024** — OpenAI Superalignment Fast Grant awarded ($500k)
-- **2023–2024** — Led WellLabeled advocacy group on data annotation worker rights at Stanford HAI
-
-[CV](https://github.com/zrobertson466920/zrobertson466920.github.io/blob/master/Awesome_CV-3.pdf) · [Google Scholar](https://scholar.google.com/citations?user=769PIisAAAAJ&hl=en) · [GitHub](https://github.com/zrobertson466920)
+- **Aug 2025:** First-author paper on evaluation mechanisms featured on arXiv front page
+- **July–Dec 2024:** Invited talks: Max Planck Institute for Intelligent Systems; FloodGate
+- **April 2024:** OpenAI Superalignment Fast Grant awarded ($500k)
+- **2023–2024:** Led WellLabeled advocacy group on data annotation worker rights at Stanford HAI
 
 ### Contact
 [zroberts@stanford.edu](mailto:zroberts@stanford.edu)
+
+[CV](https://github.com/zrobertson466920/zrobertson466920.github.io/blob/master/Awesome_CV-3.pdf) · [Google Scholar](https://scholar.google.com/citations?user=769PIisAAAAJ&hl=en) · [GitHub](https://github.com/zrobertson466920)
 
 _Last updated: August 2025._
 
