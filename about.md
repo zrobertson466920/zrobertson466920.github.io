@@ -29,6 +29,7 @@ My recent work introduces an information-theoretic framework for **black-box LLM
 - **Research:** Toyota Technological Institute (perception & language grounding)
 
 ### News
+- **Sept 2025:** Invited talk "Paying with Information, not Vibes" at *Building an Aligned AI Future* (Fifty Years @ Stanford). [Event link](https://luma.com/d1wxjy6s?tk=KM9dGC)
 - **Aug 2025:** First-author paper on evaluation mechanisms featured on arXiv front page
 - **July–Dec 2024:** Invited talks: Max Planck Institute for Intelligent Systems; FloodGate
 - **April 2024:** OpenAI Superalignment Fast Grant awarded ($500k)
