@@ -2,25 +2,36 @@
 layout: page
 title: About
 permalink: /about/
-description: Stanford CS PhD developing information-theoretic mechanisms for evaluating AI systems without ground truth.
+description: Stanford CS PhD building info-theoretic foundations for evaluation infrastructure
 ---
 
-I'm a CS PhD at Stanford working on **scalable oversight**—information-theoretic mechanisms to evaluate AI systems **without ground truth**, with guarantees under strategic manipulation.
+I'm a CS PhD at Stanford working on **scalable oversight**; information-theoretic mechanisms to evaluate AI systems **without ground truth**. I work end-to-end: **proofs → benchmarks → pilots**.
 
-### Research
-My recent work introduces an information-theoretic framework for **black-box LLM evaluation without ground truth**, bridging mechanism design and practical evaluation. In theory and experiments, the approach yields **10–100× higher robustness** to adversarial manipulation than prior methods ([arXiv:2508.05469](https://www.arxiv.org/abs/2508.05469), Aug 2025). In submission; received feedback from mechanism design experts (e.g., [Yuqing Kong](https://cfcs.pku.edu.cn/yuqkong/)).
+### Highlights
+- **Funding:** Lead on OpenAI **Superalignment Fast Grant** ($500k, 2024).
+- **Result:** Info-theoretic framework for **black-box LLM evaluation without ground truth** with **10–100×** robustness to adversarial manipulation vs. prior methods ([arXiv:2508.05469](https://www.arxiv.org/abs/2508.05469), Aug 2025).
+- **Adoption/recognition:** Initial production deployments ([LinkedIn](https://www.linkedin.com/posts/florian-h%C3%B6nicke-b902b6aa_icml-icml24-icml2024-activity-7224064255677849601-wdgS)); invited lightning talk at *Building an Aligned AI Future* (Fifty Years @ Stanford, Sept 2025) ([event](https://luma.com/d1wxjy6s?tk=KM9dGC)).
 
-**Field response.** Within weeks of the arXiv release, several labs initiated alternative evaluation platforms—underscoring the urgency of this direction.
+### Research Program
+**Theory.** We link incentive-compatible scoring rules to **f-mutual information**, showing **bounded f-divergences** (e.g., TVD) maintain polynomial robustness under strategic attacks while **unbounded** ones (e.g., KL) can degrade exponentially.  
 
-### Impact & Recognition
-- **Early adoption:** ICML 2024 highlight; initial production deployments ([LinkedIn](https://www.linkedin.com/posts/florian-h%C3%B6nicke-b902b6aa_icml-icml24-icml2024-activity-7224064255677849601-wdgS))
-- **Academic influence:** Helped catalyze new lines of work on scalable oversight across multiple institutions
-- **Open science:** Preregistration ([OSF](https://osf.io/c7pum)), code, and complete proofs
+**Experiments/Implementation.** We instantiate these mechanisms for **LLM evals without ground truth**, where querying for **information relationships** (not quality judgments) yields robust item-level scores. In practice, **TVD-MI** achieves strong AUC under attack; code + preregistration released.
+
+**Field response.** Within weeks of the arXiv release, several labs initiated alternative evaluation platforms—underscoring urgency of this direction. Feedback from mechanism-design experts (e.g., [Yuqing Kong](https://cfcs.pku.edu.cn/yuqkong/)).
+
+### Adoption & Recognition
+- ICML 2024 highlight; early production deployments ([LinkedIn](https://www.linkedin.com/posts/florian-h%C3%B6nicke-b902b6aa_icml-icml24-icml2024-activity-7224064255677849601-wdgS))
+- Invited lightning talk: *Paying for Information, Not Vibes* at **Building an Aligned AI Future** (Fifty Years @ Stanford, Sept 2025) ([event](https://luma.com/d1wxjy6s?tk=KM9dGC))
+- **Open science:** preregistration ([OSF](https://osf.io/c7pum)), code, and complete proofs
 
 ### Research Leadership & Funding
-- **Lead author and primary researcher**, OpenAI Superalignment Fast Grant ($500k, 2024). I conceived, wrote, and secured the agenda; executed framework from proposal to validation
-- **Advocacy:** Led *WellLabeled* (Stanford HAI) on data annotation worker rights; interviews with Turkopticon, Scale AI, and OpenAI; featured by Stanford HAI ([article + video](https://hai.stanford.edu/news/exploring-complex-ethical-challenges-data-annotation), Jul 2024) and invited talk at FloodGate.
-- **First-author** theoretical and empirical contributions connecting mechanism design to ML evaluation
+- **Lead & primary researcher**, OpenAI Superalignment Fast Grant ($500k, 2024): conceived agenda; executed from proposal to validation
+- **Advocacy:** Led *WellLabeled* (Stanford HAI) on data-annotation worker rights; interviews with Turkopticon, Scale AI, and OpenAI; featured by Stanford HAI ([article + video](https://hai.stanford.edu/news/exploring-complex-ethical-challenges-data-annotation), Jul 2024); invited talk at FloodGate
+- **First-author** theoretical and empirical work connecting mechanism design to ML evaluation
+
+### Talks & Public Engagement
+- *Paying for Information, Not Vibes.* Lightning talk, **Building an Aligned AI Future** (Fifty Years @ Stanford), Sept 2025
+- Invited talks (selected): Max Planck Institute for Intelligent Systems; FloodGate (2024)
 
 ### Background (select)
 - **Theory:** BS, Computational & Applied Math (UChicago)
@@ -29,11 +40,11 @@ My recent work introduces an information-theoretic framework for **black-box LLM
 - **Research:** Toyota Technological Institute (perception & language grounding)
 
 ### News
-- **Sept 2025:** Invited talk "Paying with Information, not Vibes" at *Building an Aligned AI Future* (Fifty Years @ Stanford). [Event link](https://luma.com/d1wxjy6s?tk=KM9dGC)
+- **Sept 2025:** Invited lightning talk at *Building an Aligned AI Future* (Fifty Years @ Stanford) — [event](https://luma.com/d1wxjy6s?tk=KM9dGC)
 - **Aug 2025:** First-author paper on evaluation mechanisms featured on arXiv front page
 - **July–Dec 2024:** Invited talks: Max Planck Institute for Intelligent Systems; FloodGate
 - **April 2024:** OpenAI Superalignment Fast Grant awarded ($500k)
-- **2023–2024:** Led WellLabeled advocacy group on data annotation worker rights at Stanford HAI
+- **2023–2024:** Led WellLabeled advocacy group on data-annotation worker rights at Stanford HAI
 
 ### Contact
 [zroberts@stanford.edu](mailto:zroberts@stanford.edu)
