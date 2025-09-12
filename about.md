@@ -51,7 +51,7 @@ I'm a CS PhD at Stanford working on **scalable oversight**; information-theoreti
 
 [CV](https://github.com/zrobertson466920/zrobertson466920.github.io/blob/master/Awesome_CV-3.pdf) · [Google Scholar](https://scholar.google.com/citations?user=769PIisAAAAJ&hl=en) · [GitHub](https://github.com/zrobertson466920)
 
-_Last updated: August 2025._
+_Last updated: September 2025._
 
 ### Publications
 
