@@ -17,7 +17,7 @@ I'm a CS PhD at Stanford working on **scalable oversight**; information-theoreti
 
 **Experiments/Implementation.** We instantiate these mechanisms for **LLM evals without ground truth**, where querying for **information relationships** (not quality judgments) yields robust item-level scores. In practice, **TVD-MI** achieves strong AUC under attack; code + preregistration released.
 
-**Field response.** Within weeks of the arXiv release, several labs initiated alternative evaluation platforms—underscoring urgency of this direction. Feedback from mechanism-design experts (e.g., [Yuqing Kong](https://cfcs.pku.edu.cn/yuqkong/)).
+**Field validation.** Technical framework connects peer prediction (game theory) with item response theory (psychometrics) via maximum entropy principles. Concurrent emergence of multiple evaluation platforms and institutional pivots (AISI Safety→Measurement rebrand, Dec 2025) validate urgency of gaming-resistant evaluation infrastructure. Feedback from mechanism-design experts (e.g., [Yuqing Kong](https://cfcs.pku.edu.cn/yuqkong/)).
 
 ### Adoption & Recognition
 - ICML 2024 highlight; early production deployments ([LinkedIn](https://www.linkedin.com/posts/florian-h%C3%B6nicke-b902b6aa_icml-icml24-icml2024-activity-7224064255677849601-wdgS))
@@ -53,7 +53,7 @@ I'm a CS PhD at Stanford working on **scalable oversight**; information-theoreti
 
 _Last updated: September 2025._
 
-### Publications
+### Selected Publications
 
 1. **Zachary Robertson** and Sanmi Koyejo. [Let's Measure Information Step-by-Step: LLM-Based Evaluation Beyond Vibes](https://arxiv.org/abs/2508.05469). arXiv:2508.05469, 2025
 2. Olawale Salaudeen, Anka Reuel, Ahmed Ahmed, Suhana Bedi, **Zachary Robertson**, Sudharsan Sundar, Ben Domingue, Angelina Wang, and Sanmi Koyejo. [Measurement to Meaning: A Validity-Centered Framework for AI Evaluation](https://arxiv.org/abs/2505.10573). arXiv:2505.10573, 2025
@@ -65,4 +65,3 @@ _Last updated: September 2025._
 8. **Zachary Robertson**. [GPT4 is Slightly Helpful for Peer-Review Assistance: A Pilot Study](https://arxiv.org/abs/2307.05492). arXiv preprint arXiv:2307.05492, 2023
 9. **Zachary Robertson**, Hantao Zhang, and Sanmi Koyejo. [Probabilistic Performance Metric Elicitation](https://www.ideals.illinois.edu/items/124609). 1st Workshop on Human and Machine Decisions (WHMD 2021) at NeurIPS 2021, 2022
 10. **Zachary Robertson** and Matthew Walter. [Concurrent Training Improves the Performance of Behavioral Cloning from Observation](https://arxiv.org/abs/2008.01205). arXiv preprint arXiv:2008.01205, 2020
-11. Julian Stürmer, Andreas Seifahrt, **Zachary Robertson**, Christian Schwab, and Jacob L Bean. [Echelle++, a Fast Generic Spectrum Simulator](https://iopscience.iop.org/article/10.1088/1538-3873/aaec2e/meta). Publications of the Astronomical Society of the Pacific, 131(996):024502, 2018
