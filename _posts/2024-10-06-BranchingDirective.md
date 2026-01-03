@@ -8,7 +8,7 @@ In the realm of artificial intelligence and knowledge management, we often find 
 
 **Philosophical Roots**
 
-To understand the motivation behind this project, we must first set the context with some deeper philosophical concepts. Ruth Millikan's "Swampman" thought experiment challenges our notions of identity and meaning. Imagine a machine that could assemble atoms to create an exact physical duplicate of a person, including their brain state. This clone, the Swampman, would be molecule-for-molecule identical to the original person at the moment of creation.
+To understand the motivation behind this project, we must first set the context with some deeper philosophical concepts. Ruth Millikan's treatment of Donald Davidson's "Swampman" thought experiment challenges our notions of identity and meaning. Imagine a machine that could assemble atoms to create an exact physical duplicate of a person, including their brain state. This clone, the Swampman, would be molecule-for-molecule identical to the original person at the moment of creation.
 
 Yet, Millikan argues, this Swampman would lack genuine thoughts, intentions, or semantic content. Why? Because it lacks the appropriate history. This idea hinges on Millikan's concept of "proper function" - the notion that the meaning and function of our thoughts and behaviors are determined by their evolutionary and personal history.
 
