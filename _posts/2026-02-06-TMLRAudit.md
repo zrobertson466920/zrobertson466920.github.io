@@ -32,21 +32,26 @@ I scraped all 5,844 TMLR submissions from the OpenReview API (as of February 6, 
 
 For each paper, compute `days_from_third_review_to_decision = (t_decision - t_third_review) / 86400` and compare against the 35-day (5-week) stated window.
 
-**Results.**
+### Results
 
-| Metric          | Days     |
-| --------------- | -------- |
-| Median          | **45.2** |
-| 75th percentile | 57.0     |
-| 90th percentile | 72.5     |
-| 95th percentile | 83.3     |
-| 99th percentile | 116.2    |
+**Decision time distribution**
 
-| Compliance threshold         | Share exceeding |
-| ---------------------------- | --------------- |
-| > 28 days (4-week window)   | 95.7%       |
-| > 35 days (≈5-week total) | **82.5%**       |
-| > 42 days (6 weeks)          | 60.4%           |
+| Metric | Days |
+|---|---|
+| Median | **45.2** |
+| 75th pct | 57.0 |
+| 90th pct | 72.5 |
+| 95th pct | 83.3 |
+| 99th pct | 116.2 |
+
+**Share exceeding thresholds**
+
+| Threshold | Share |
+|---|---|
+| > 28 days (4-week window) | 95.7% |
+| > 35 days (≈5-week total) | **82.5%** |
+| > 42 days (6 weeks) | 60.4% |
+
 
 The median paper receives its decision 17 days after the 4-week reviewer-recommendation window. Only 4.3% of submissions receive decisions within 28 days of the third review.
 
