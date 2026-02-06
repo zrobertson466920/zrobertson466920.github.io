@@ -34,17 +34,17 @@ For each paper, compute `days_from_third_review_to_decision = (t_decision - t_th
 
 ### Results
 
-| Metric / threshold | Value |
-|--------------------|-------|
-| **Median** | **45.2 days** |
-| 75th percentile | 57.0 days |
-| 90th percentile | 72.5 days |
-| 95th percentile | 83.3 days |
-| 99th percentile | 116.2 days |
-|  |  |
-| **> 28 days (4-week window)** | 95.7% |
-| **> 35 days (≈5-week total)** | **82.5%** |
-| **> 42 days (6 weeks)** | 60.4% |
+| Metric&nbsp; | &nbsp;Value&nbsp; |
+|--------------|------------------|
+| Median | &nbsp;**45.2 days**&nbsp; |
+| 75th percentile | &nbsp;57.0 days&nbsp; |
+| 90th percentile | &nbsp;72.5 days&nbsp; |
+| 95th percentile | &nbsp;83.3 days&nbsp; |
+| 99th percentile | &nbsp;116.2 days&nbsp; |
+| &nbsp; | &nbsp; |
+| > 28 days&nbsp;(4-week window) | &nbsp;95.7%&nbsp; |
+| > 35 days&nbsp;(≈5-week total) | &nbsp;**82.5%**&nbsp; |
+| > 42 days&nbsp;(6 weeks) | &nbsp;60.4%&nbsp; |
 
 
 The median paper receives its decision 17 days after the 4-week reviewer-recommendation window. Only 4.3% of submissions receive decisions within 28 days of the third review.
