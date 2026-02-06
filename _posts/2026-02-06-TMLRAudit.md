@@ -42,7 +42,7 @@ For each paper, compute `days_from_third_review_to_decision = (t_decision - t_th
 | 95th percentile | &nbsp;83.3 days&nbsp; |
 | 99th percentile | &nbsp;116.2 days&nbsp; |
 | &nbsp; | &nbsp; |
-| > 28 days&nbsp;(4-week window) | &nbsp;95.7%&nbsp; |
+| > 28 days&nbsp;(initial) | &nbsp;95.7%&nbsp; |
 | > 35 days&nbsp;(5-week total) | &nbsp;**82.5%**&nbsp; |
 | > 42 days&nbsp;(6 weeks) | &nbsp;60.4%&nbsp; |
 
