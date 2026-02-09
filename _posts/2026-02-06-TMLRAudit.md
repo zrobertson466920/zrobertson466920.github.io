@@ -42,8 +42,8 @@ For each paper, compute `days_from_third_review_to_decision = (t_decision - t_th
 | 95th percentile | &nbsp;83.3 days&nbsp; |
 | 99th percentile | &nbsp;116.2 days&nbsp; |
 | &nbsp; | &nbsp; |
-| > 28 days&nbsp;(initial) | &nbsp;95.7%&nbsp; |
-| > 35 days&nbsp;(5-week total) | &nbsp;**82.5%**&nbsp; |
+| > 28 days&nbsp;(discussion) | &nbsp;95.7%&nbsp; |
+| > 35 days&nbsp;(AE) | &nbsp;**82.5%**&nbsp; |
 | > 42 days&nbsp;(6 weeks) | &nbsp;60.4%&nbsp; |
 
 
@@ -69,12 +69,12 @@ A natural concern is that longer decision times reflect more contentious or ulti
 
 ![Rejection rate by decision wait time]({{ site.baseurl }}/images/tmlr_rejection_by_wait.png)
 
-| Wait time | N | Rejection rate |
-|-----------|---|----------------|
-| 15–35 days | 851 | 26.9% |
-| 35–55 days | 2,636 | 27.9% |
-| 55–75 days | 957 | 28.4% |
-| 75–100 days | 330 | 30.5% |
+| Wait time&nbsp; | &nbsp;N&nbsp; | &nbsp;Rejection rate&nbsp; |
+|-----------------|---------------|----------------------------|
+| 15–35 days | &nbsp;851&nbsp; | &nbsp;26.9%&nbsp; |
+| 35–55 days | &nbsp;2,636&nbsp; | &nbsp;27.9%&nbsp; |
+| 55–75 days | &nbsp;957&nbsp; | &nbsp;28.4%&nbsp; |
+| 75–100 days | &nbsp;330&nbsp; | &nbsp;30.5%&nbsp; |
 
 The extra wait time doesn't correlate with more careful or more negative decisions — it appears to be pure process latency. Papers decided quickly have roughly the same acceptance rate as papers that wait three months.
 
