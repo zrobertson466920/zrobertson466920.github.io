@@ -63,6 +63,21 @@ Another interpretation is that the "ongoing discussion" caveat frequently applie
 
 ![TMLR median decision time by year]({{ site.baseurl }}/images/tmlr_yearly.png)
 
+### Does Waiting Longer Predict Worse Outcomes?
+
+A natural concern is that longer decision times reflect more contentious or ultimately rejected papers. The data don't support this. Binning submissions by wait time (5-day bins, minimum 20 papers per bin), the rejection rate is flat at approximately 28% across the entire range from 15 to 100+ days.
+
+![Rejection rate by decision wait time]({{ site.baseurl }}/images/tmlr_rejection_by_wait.png)
+
+| Wait time | N | Rejection rate |
+|-----------|---|----------------|
+| 15–35 days | 851 | 26.9% |
+| 35–55 days | 2,636 | 27.9% |
+| 55–75 days | 957 | 28.4% |
+| 75–100 days | 330 | 30.5% |
+
+The extra wait time doesn't correlate with more careful or more negative decisions — it appears to be pure process latency. Papers decided quickly have roughly the same acceptance rate as papers that wait three months.
+
 ### Reliability of the Measurement
 
 **Is the measurement valid?** The timestamps come from OpenReview's API: machine-generated creation dates for reviews and decisions. No human judgment, no subjective classification. The only analytical choice is which review timestamp to use (I use the third, since that's when the clock starts per TMLR's own email).
