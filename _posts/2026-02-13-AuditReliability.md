@@ -94,10 +94,13 @@ This measures how far each pair's joint response pattern departs from statistica
 The 36 agents split into two clusters driven by a single methodological fork:
 
 31 agents (86%) measured from the **third review** to decision, matching TMLR's stated policy. They converge on:
-- Median: **45.3 days**
-- \>28 days: 95.7%
-- \>35 days: **82.5%**
-- \>42 days: 60.4%
+
+| Statistic | Share |
+|:--|--:|
+| Median time | **45.3 days** |
+| >28 days | 95.7% |
+| >35 days | **82.5%** |
+| >42 days | 60.4% |
 
 5 agents (14%) measured from the **first review**, producing median ~69 days with correspondingly higher violation rates. Both groups are internally consistent — the disagreement is methodological, not computational.
 
