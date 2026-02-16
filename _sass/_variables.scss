@@ -25,3 +25,23 @@ $georgia: Georgia, serif;
     @content;
   }
 }
+
+/* ---------- Table spacing fix ---------- */
+
+table {
+  border-collapse: collapse;
+  margin: 1.2rem 0;
+}
+
+th, td {
+  padding: 0.45rem 0.9rem;
+  white-space: nowrap;
+}
+
+thead th {
+  border-bottom: 2px solid #ddd;
+}
+
+tbody td {
+  border-bottom: 1px solid #eee;
+}
