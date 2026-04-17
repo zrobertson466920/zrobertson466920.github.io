@@ -43,7 +43,7 @@ I work across theory and practice. I contributed early work on chain-of-thought 
 
 [zroberts@stanford.edu](mailto:zroberts@stanford.edu)
 
-[CV](https://github.com/zrobertson466920/zrobertson466920.github.io/blob/master/Awesome_CV-3.pdf) · [Google Scholar](https://scholar.google.com/citations?user=769PIisAAAAJ&hl=en) · [GitHub](https://github.com/zrobertson466920)
+[CV](https://github.com/zrobertson466920/zrobertson466920.github.io/blob/master/Awesome_CV-3.pdf) · [Google Scholar](https://scholar.google.com/citations?user=769PIisAAAAJ&hl=en) · [GitHub](https://github.com/zrobertson466920) · [X/Twitter](https://x.com/zwrobertson) · [LinkedIn](https://www.linkedin.com/in/zrobertson466920/)
 
 _Last updated: April 2026._
 
