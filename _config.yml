@@ -6,7 +6,7 @@
 name: The Replication Loop
 
 # Short bio or description (displayed in the header)
-description: Collection of articles loosly focused on presenting different perspectives on the learning problem. 
+description: Collection of articles loosely focused on presenting different perspectives on the learning problem. 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars0.githubusercontent.com/u/28766961?s=400&u=72d0aa76ffdca2cb71002460b6c8f64ee2782b86&v=4
@@ -22,9 +22,8 @@ minimal_mistakes_skin: "default"
 footer-links:
   email: zrobertson@stanford.edu
   github: zrobertson466920
-  linkedin: www.linkedin.com/in/zachary-robertson-1286ba120
-  rss: # just type anything here for a working RSS icon
-  youtube: channel/UCbRdNtDRpLk7MtAD_4ntfgA
+  linkedin: https://www.linkedin.com/in/zrobertson466920/
+  twitter: https://x.com/zwrobertson
   
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -35,7 +34,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: zrobertson466920.github.io
+url: "https://zrobertson466920.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
