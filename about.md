@@ -19,7 +19,7 @@ I work across theory and practice. I contributed early work on chain-of-thought 
 ### News & Engagement
 
 - **Apr 2026:** Featured in *The Atlantic*: [*The Strange Origin of AI’s ‘Reasoning’ Abilities*](https://www.theatlantic.com/technology/2026/04/4chan-ai-dungeon-thinking-reasoning/686794/?gift=0eg_N5wf_UNSiF4sMBbZ4StD-I2TBN1LxAzadN65nOE&utm_source=copy-link&utm_medium=social&utm_campaign=share).
-- **Apr 2026:** Coauthor on *Value Alignment of Social Media Ranking Algorithms* (**CHI 2026**), on aligning social media feeds with users’ articulated values rather than engagement alone.
+- **Apr 2026:** Coauthor on [Value Alignment of Social Media Ranking Algorithms](https://dl.acm.org/doi/full/10.1145/3772318.3791281) (**CHI 2026**), a generalizable method for aligning social media feeds to users’ values, showing with 400+ users that value-driven rankings produce meaningfully aligned feeds using their own X/Twitter data.
 - **Sept 2025:** Invited talk at *Building an Aligned AI Future* (Fifty Years @ Stanford): [event](https://luma.com/d1wxjy6s?tk=KM9dGC).
 - **Aug 2025:** First-author on *Let's Measure Information Step-by-Step: LLM-Based Evaluation Beyond Vibes*, a paper on robust evaluation without ground truth: [arXiv:2508.05469](https://www.arxiv.org/abs/2508.05469). **Front-page**.
 - **July 2024:** Featured by Stanford HAI for *WellLabeled*, a cross-disciplinary project on ethical challenges in AI data annotation and worker protections: [article + video](https://hai.stanford.edu/news/exploring-complex-ethical-challenges-data-annotation).
