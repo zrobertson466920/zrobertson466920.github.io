@@ -8,13 +8,13 @@ description:  Stanford CS PhD studying AI evaluation without ground truth; tree-
 
 I study how to evaluate AI systems when ground truth is unavailable. My current focus is [mutual evaluation](https://github.com/zrobertson466920/zrobertson466920.github.io/blob/master/Short%20Talk%20-%20Measuring%20Information%20with%20LLMs.pdf): using interactions between agents to measure reliability without labeled answers. More broadly, I'm interested in how human preferences, stated and revealed, get encoded into agents and ranking systems, and where those processes break down.
 
-I work across theory and practice. I contributed early work on chain-of-thought prompting, a technique for eliciting step-by-step reasoning in language models. In later reporting on the technique’s early independent origins, [The Atlantic described me as a “co-inventor.”](https://www.theatlantic.com/technology/2026/04/4chan-ai-dungeon-thinking-reasoning/686794/?gift=0eg_N5wf_UNSiF4sMBbZ4StD-I2TBN1LxAzadN65nOE&utm_source=copy-link&utm_medium=social&utm_campaign=share) I continue maintaining one of the [larger human-generated tree-of-thought](https://zrobertson466920.github.io/BranchingDirective/) systems for studying reasoning and evaluation. I've also used the system to contribute to early [reasoning data work](https://hai.stanford.edu/news/exploring-complex-ethical-challenges-data-annotation) for frontier models. The through-line is my interest in how illegible human signals become legible data for training machine behavior.
+I work across theory and practice. I contributed work on chain-of-thought prompting, a technique for eliciting step-by-step reasoning in language models later described by The Atlantic as part of the techniques's ["strange origin" story.](https://www.theatlantic.com/technology/2026/04/4chan-ai-dungeon-thinking-reasoning/686794/?gift=0eg_N5wf_UNSiF4sMBbZ4StD-I2TBN1LxAzadN65nOE&utm_source=copy-link&utm_medium=social&utm_campaign=share) I continue maintaining one of the [larger human-generated tree-of-thought](https://zrobertson466920.github.io/BranchingDirective/) systems for studying reasoning and evaluation. I've also used the system to contribute [reasoning data work](https://hai.stanford.edu/news/exploring-complex-ethical-challenges-data-annotation) for frontier models. The through-line is my interest in how illegible human signals become legible data for training machine behavior.
 
 ### Themes
 
 **Scalable oversight:** Information-theoretic evaluation of AI systems without ground truth. Current focus is **mutual evaluation**, using model interactions to measure reliability without labeled answers, along with theoretical foundations for robustness to adversarial manipulation ([arXiv:2508.05469](https://arxiv.org/abs/2508.05469), Aug 2025 accepted with minor revisions at TMLR, 2026). Supported by an OpenAI Superalignment Fast Grant ($500k, 2024).
 
-**Human signal construction:** Methods and systems for eliciting, structuring, and validating human signals used to train and evaluate models. This includes early work on chain-of-thought prompting and reasoning decomposition, as well as research on annotation pipelines, red teaming, and aligning ranking systems (e.g., social media feeds) with users’ articulated values.
+**Human signal construction:** Methods and systems for eliciting, structuring, and validating human signals used to train and evaluate models. This includes work on chain-of-thought prompting and reasoning decomposition, as well as research on annotation pipelines, red teaming, and aligning ranking systems (e.g., social media feeds) with users’ articulated values.
 
 ### News & Engagement
 
@@ -24,7 +24,7 @@ I work across theory and practice. I contributed early work on chain-of-thought 
 - **Aug 2025 / Apr 2026:** First-author on *Let's Measure Information Step-by-Step: LLM-Based Evaluation Beyond Vibes*, a paper on robust evaluation without ground truth: [arXiv:2508.05469](https://www.arxiv.org/abs/2508.05469). **Accepted with minor revisions at TMLR**.
 - **July 2024:** Featured by Stanford HAI for *WellLabeled*, a cross-disciplinary project on ethical challenges in AI data annotation and worker protections: [article + video](https://hai.stanford.edu/news/exploring-complex-ethical-challenges-data-annotation).
 - **July 2024:** Invited talks on scalable oversight including FloodGate and Max Planck Institute for Intelligent Systems.
-- **July 2024:** Early production deployments related to scalable evaluation infrastructure: [LinkedIn post](https://www.linkedin.com/posts/florian-h%C3%B6nicke-b902b6aa_icml-icml24-icml2024-activity-7224064255677849601-wdgS).
+- **July 2024:** Initial production deployments related to scalable evaluation infrastructure: [LinkedIn post](https://www.linkedin.com/posts/florian-h%C3%B6nicke-b902b6aa_icml-icml24-icml2024-activity-7224064255677849601-wdgS).
 - **May 2024:** Lead on OpenAI Superalignment Fast Grant ($500k).
 
 ### Experience
@@ -45,7 +45,7 @@ I work across theory and practice. I contributed early work on chain-of-thought 
 
 [CV](https://github.com/zrobertson466920/zrobertson466920.github.io/blob/master/Awesome_CV-3.pdf) · [Google Scholar](https://scholar.google.com/citations?user=769PIisAAAAJ&hl=en) · [GitHub](https://github.com/zrobertson466920) · [X/Twitter](https://x.com/zwrobertson) · [LinkedIn](https://www.linkedin.com/in/zrobertson466920/)
 
-_Last updated: April 2026._
+_Last updated: June 2026._
 
 ### Selected Publications
 
