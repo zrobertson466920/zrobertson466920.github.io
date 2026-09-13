@@ -123,10 +123,10 @@ $$
 
 The replication loop mechanisms both terminate and equal their corresponding mutual information functional in expectation. Specifically, the replication procedure evaluates the information *retained* by the equivalence classes of the critic. 
 
-**Theorem (termination, integrability, and unbiasedness).** For finite $$X,R$$, every fixed channel $$k$$, and every valid critic $$c$$, each invoked replication sequence terminates almost surely (with probability one) and both payments are integrable ($$\mathbb E[|W_\bullet|]<\infty$$). If $$c=c_g$$ and $$A=g(Y)$$, set $$A'=g(\widetilde Y_1)$$ and $$p_A(a)=\Pr(A=a)$$. Then
+**Theorem (termination, integrability, and unbiasedness).** For finite $$X,R$$, every fixed channel $$k$$, and every valid critic $$c$$, each invoked replication sequence terminates almost surely (with probability one) and both payments are integrable ($$\mathbb {E}[|W_{\bullet}|]<\infty$$). If $$c=c_g$$ and $$A=g(Y)$$, set $$A'=g(\widetilde Y_1)$$ and $$p_A(a)=\Pr(A=a)$$. Then
 
 $$
-\begin{aligned} u_{\chi^2}(c;P,k) &= \sum_{a:p_A(a)>0} \frac{\Pr(A=a,A'=a)}{p_A(a)} -1 = I_{\chi^2}(X;A), \\[1ex]
+\begin{aligned} u_{\chi^2}(c;P,k) &= \sum_{a:p_A(a)>0} \frac{\Pr(A=a,A'=a)}{p_A(a)} -1 = I_{\chi^2}(X;A), \\
  u_{\mathrm{KL}}(c;P,k) &= I(X;A), \end{aligned}
 $$
 
