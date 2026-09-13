@@ -20,7 +20,7 @@ This means producing a score does not require a second peer worker, a ground-tru
 
 ## The mutual evaluation game
 
-A mutual evaluation game $$G$$ has an evaluation type (task set) $$X$$ and a completion return type (return alphabet) $$R$$. Both are finite here. Write $$\Delta(R)$$ for beliefs over returns. A channel or kernel maps an input to a belief over outputs. A task $$x\sim P$$, drawn from the task prior (distribution) $$P$$, generates raw returns through two fixed worker channels $$w_i:X\to\Delta(R)$$, $$i\in\lbrace0,1 \rbrace$$. The critic chooses a finite-valued rule that induces an evaluation score on joint report laws [4]. The rule is $$c:R\times R\to S$$, with $$S\subset\mathbb R$$ finite and nonempty; $$u(c,\rho)$$ is the common payoff.
+A mutual evaluation game $$G$$ has an evaluation type (task set) $$X$$ and a completion return type (return alphabet) $$R$$. Both are finite here. Write $$\Delta(R)$$ for beliefs over returns. A channel or kernel maps an input to a belief over outputs. A task $$x\sim P$$, drawn from the task prior (distribution) $$P$$, generates raw returns through two fixed worker channels $$w_i:X\to\Delta(R)$$, $$i\in \lbrace 0,1 \rbrace$$. The critic chooses a finite-valued rule that induces an evaluation score on joint report laws [4]. The rule is $$c:R\times R\to S$$, with $$S\subset\mathbb R$$ finite and nonempty; $$u(c,\rho)$$ is the common payoff.
 
 Each worker chooses a reporting kernel $$\sigma_i:R\to\Delta(R)$$:
 
@@ -42,8 +42,8 @@ $$
 $$
 
 Terms with zero denominator are omitted, and zero-mass logarithmic terms contribute zero. Logarithms are natural. The Shannon score is also called the Kullback–Leibler (KL) score.
-
-Fix the critic score set to $$S= \lbrace 0,1 \rbrace$$. A critic rule $$c:R\times R\to \lbrace0,1 \rbrace$$ can be seen as a relation. This relation is *valid* when
+ 
+Fix the critic score set to $$S= \lbrace 0,1 \rbrace$$. A critic rule $$c:R\times R\to \lbrace 0,1 \rbrace$$ can be seen as a relation. This relation is *valid* when
 
 $$
 y\sim_c y' \quad\Longleftrightarrow\quad c(y,y')=1
@@ -54,7 +54,7 @@ defines an equivalence relation on the entire return alphabet. Notice validity i
 **Theorem (finite annotation representation).** Suppose $$R$$ is finite. A critic is valid if and only if there are a finite annotation alphabet $$B$$ and a deterministic map $$g:R\to B$$ such that
 
 $$
-c(y,y')=c_g(y,y') :=\mathbf 1\lbrace g(y)=g(y')\rbrace \qquad\text{for every }y,y'\in R.
+c(y,y')=c_g(y,y') :=\mathbf 1 \lbrace g(y)=g(y')\rbrace \qquad\text{for every }y,y'\in R.
 $$
 
 A valid critic is way to partition the worker's return alphabet. It decides which returns count as the same type.
@@ -84,7 +84,7 @@ It is assumed the reporting channel and critic remain fixed throughout the exper
 Given a valid critic define the alternative and null type-replication variables (first-match counts, or hitting times) from the comparisons:
 
 $$
-\tau_{\mathrm{alternative}} := \inf\lbracen\ge1:c(Y,\widetilde Y_n)=1 \rbrace, \qquad \tau_{\mathrm{null}} := \inf \lbrace n\ge1:c(Y,Z_n)=1
+\tau_{\mathrm{alternative}} := \inf \lbrace n\ge1:c(Y,\widetilde Y_n)=1 \rbrace, \qquad \tau_{\mathrm{null}} := \inf \lbrace n\ge1:c(Y,Z_n)=1
 \rbrace,
 $$
 
@@ -238,7 +238,7 @@ The mechanisms require a fixed memoryless (history-independent) worker-critic st
 After the anchor, advancing each unfinished clock once per parallel round gives KL completion time $$T_{\mathrm{KL}}$$, with expectation
 
 $$
-\mathbb E[T_{\mathrm{KL}}] = \mathbb E[\max\lbrace\tau_{\mathrm{null}},\tau_{\mathrm{alternative}} \rbrace],
+\mathbb E[T_{\mathrm{KL}}] = \mathbb E[\max \lbrace \tau_{\mathrm{null}},\tau_{\mathrm{alternative}} \rbrace],
 $$
 
 not the expected total sample count. Pearson has an entry clause: an immediate same-task match. Excluding this one-sample test, its null-search wait on the same draws is
@@ -257,7 +257,7 @@ The conflict here illustrates the importance of analyzing the critic as a strate
 
 ```bibtex
 @misc{robertson2025tmlrreplication,
-  title={Replication Loop Mechanisms: Mutual Evaluation and Peer-Free Supervision},
+  title={The Replication Loop: Mutual Evaluation and Supervision without Peers},
   author={Robertson, Zachary},
   year={2025},
   month={September},
