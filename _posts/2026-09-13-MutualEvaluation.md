@@ -251,19 +251,18 @@ KL wait therefore dominates Pearson's null-search wait almost surely and in expe
 
 The conflict here illustrates the importance of analyzing the critic as a strategic agent. Garbling influenced by memory, expected waiting time, and so on can fundamentally *deviate* from the intended construct. A critic that optimizes this raw waiting-time proxy while the stated objective is KL is therefore implicitly optimizing the Pearson score instead. While the setting is stylized, such considerations appear rich for further analysis and follow-up work.
 
-**Conclusion.** The mutual evaluation model provides a common formalization for the peer-prediction and replication seetings. Peer prediction uses both worker channels. The conceptual move here is to replace the second worker by independent replications of the first, while treating the critic's notion of agreement as a strategic choice.
+**Conclusion.** The mutual evaluation model provides a common formalization for the peer-prediction and replication settings. Peer prediction uses both worker channels. The conceptual move here is to replace the second worker by independent replications of the first, while treating the critic's notion of agreement as a strategic choice.
 
 ## Citation
 
 ```bibtex
-@misc{robertson2025tmlrreplication,
+@misc{robertson2026mutualeval,
   title={The Replication Loop: Mutual Evaluation and Supervision without Peers},
   author={Robertson, Zachary},
-  year={2025},
+  year={2026},
   month={September},
   institution={Stanford University},
-  url={https://zrobertson466920.github.io/MutualEvaluation},
-  note={Blog post measuring agent replication convergence using TVD mutual information}
+  url={https://zrobertson466920.github.io/MutualEvaluation}
 }
 ```
 
