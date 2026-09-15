@@ -6,21 +6,21 @@ published: true
 
 *Can a worker be incentivized and evaluated without peer workers, ground-truth references, or future observed outcomes? Replication provides one route.*
 
-Peer prediction and proper scoring rules are mechanisms that incentivize workers to truthfully report their beliefs (probability distributions) for completing evaluation tasks. Peer prediction determines rewards from the reports of other workers rather than ground truth [1]. Proper scoring rules score reported beliefs against (future) observed outcomes [2]. Are there incentivizing mechanisms that need neither peer workers nor (future) observed outcomes?
+Peer prediction and proper scoring rules are mechanisms that incentivize workers to truthfully report their beliefs for completing evaluation tasks. Peer prediction determines rewards from the reports of other workers rather than ground truth [1]. Proper scoring rules score reported beliefs against (future) observed outcomes [2]. Are there incentivizing mechanisms that need neither peer workers nor (future) observed outcomes?
 
 This article provides a positive answer. I formalize (<a href="https://github.com/zrobertson466920/mutual-evaluation/tree/main" target="_blank">see Lean4 repo</a>) mutual evaluation of a replicable task worker and a critic that compares returns, both modeled as strategic agents seeking a common payoff (evaluation score). This model assumes access to a worker that can independently replicate their own work. For example, copies of a large language model (LLM) system can all be independently given the same evaluation tasks and specification. I then introduce a replication loop implementation, based on waiting for critic matches, that returns an unbiased estimate (correct in expectation) of the worker-critic payoff.
 
-To be brief, replication of $$Y$$ replaces the peer $$Y'$$ as a proxy for the task $$X$$. However, by the Data-Processing Inequality (DPI) this only lower-bounds true task information [3]. By comparing repeated replication attempts on the same task and freshly sampled tasks, the mechanism is able to score how much the worker preserves true task information.
+To be brief, replication $Y_1'$ of $$Y_1$$  on the same task $X$ replaces the peer $$Y_2$$ as a task proxy. However, by the Data-Processing Inequality (DPI) this only lower-bounds true task information [3]. By comparing repeated replication attempts on the same task and freshly sampled tasks, the mechanism is able to score how much the worker preserves true task information.
 
 $$
-\underbrace{I(Y;Y')}_{\text{peer proxy}} \ \le_{\text{DPI}} \ \underbrace{I(X;Y)}_{\text{true task information}}.
+\underbrace{I(Y_1;Y_2)}_{\text{peer proxy}} \ \le_{\text{DPI}} \ \underbrace{I(X;Y_{\bullet})}_{\text{true task information}} .
 $$
 
 This means producing a score does not require a second peer worker, a ground-truth reference, or an estimator for likelihood ratios. For Pearson and Shannon information, simple first-replication waiting times give unbiased estimates. In terms of incentives, consider a worker that truthfully reports and a critic that defines replication agreement without losing distinctions with the task information. This jointly maximizes the score and forms a Nash equilibrium. The trade-off is a random, potentially unbounded number of worker replications. Mutual evaluation also makes the incentives of the critic explicit; as it decides which worker returns count as the same.
 
 ## The mutual evaluation game
 
-A mutual evaluation game $$G$$ has an evaluation type (task set) $$X$$ and a completion return type (return alphabet) $$R$$. Both are finite here. Write $$\Delta(R)$$ for beliefs over returns. A channel or kernel maps an input to a belief over outputs. A task $$x\sim P$$, drawn from the task prior (distribution) $$P$$, generates raw returns through two fixed worker channels $$w_i:X\to\Delta(R)$$, $$i\in \lbrace 0,1 \rbrace$$. The critic chooses a finite-valued rule that induces an evaluation score on joint report laws [4]. The rule is $$c:R\times R\to S$$, with $$S\subset\mathbb R$$ finite and nonempty; $$u(c,\rho)$$ is the common payoff.
+A mutual evaluation game $$G$$ has an evaluation type (task set) $$X$$ and a completion return type (return alphabet) $$R$$. Both are finite here. Write $$\Delta(R)$$ for beliefs over returns. A channel or kernel affects an input to a belief (probability distributions) over outputs. A task $$x\sim P$$, drawn from the task prior (distribution) $$P$$, generates raw returns through two fixed worker channels $$w_i:X\to\Delta(R)$$, $$i\in \lbrace 0,1 \rbrace$$. The critic chooses a finite-valued rule that induces an evaluation score on joint report laws [4]. The rule is $$c:R\times R\to S$$, with $$S\subset\mathbb R$$ finite and nonempty; $$u(c,\rho)$$ is the common payoff.
 
 Each worker chooses a reporting kernel $$\sigma_i:R\to\Delta(R)$$:
 
