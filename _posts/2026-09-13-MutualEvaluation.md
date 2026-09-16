@@ -10,7 +10,7 @@ Peer prediction and proper scoring rules are mechanisms that incentivize workers
 
 This article provides a positive answer. I formalize (<a href="https://github.com/zrobertson466920/mutual-evaluation/tree/main" target="_blank">see Lean4 repo</a>) mutual evaluation of a replicable task worker and a critic that compares returns, both modeled as strategic agents seeking a common payoff (evaluation score). This model assumes access to a worker that can independently replicate their own work. For example, copies of a large language model (LLM) system can all be independently given the same evaluation tasks and specification. I then introduce a replication loop implementation, based on waiting for critic matches, that returns an unbiased estimate (correct in expectation) of the worker-critic payoff.
 
-To be brief, replication $Y_1'$ of $$Y_1$$  on the same task $X$ replaces the peer $$Y_2$$ as a task proxy. However, by the Data-Processing Inequality (DPI) this only lower-bounds true task information [3]. By comparing repeated replication attempts on the same task and freshly sampled tasks, the mechanism is able to score how much the worker preserves true task information.
+To be brief, replication $$Y_1'$$ of $$Y_1$$  on the same task $$X$$ replaces the peer $$Y_2$$ as a task proxy. However, by the Data-Processing Inequality (DPI) this only lower-bounds true task information [3]. By comparing repeated replication attempts on the same task and freshly sampled tasks, the mechanism is able to score how much the worker preserves true task information.
 
 $$
 \underbrace{I(Y_1;Y_2)}_{\text{peer proxy}} \ \le_{\text{DPI}} \ \underbrace{I(X;Y_{\bullet})}_{\text{true task information}} .
