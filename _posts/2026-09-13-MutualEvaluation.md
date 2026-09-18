@@ -6,6 +6,8 @@ published: true
 
 *Can a worker be incentivized and evaluated without peer workers, ground-truth references, or future observed outcomes? Replication provides one route.*
 
+**Paper:** [Mutual Evaluation and Supervision without Peers](https://arxiv.org/abs/2609.20789)
+
 Peer prediction and proper scoring rules are mechanisms that incentivize workers to truthfully report their beliefs for completing evaluation tasks. Peer prediction determines rewards from the reports of other workers rather than ground truth [1]. Proper scoring rules score reported beliefs against (future) observed outcomes [2]. Are there incentivizing mechanisms that need neither peer workers nor (future) observed outcomes?
 
 This article provides a positive answer. I formalize (<a href="https://github.com/zrobertson466920/mutual-evaluation/tree/main" target="_blank">see Lean4 repo</a>) mutual evaluation of a replicable task worker and a critic that compares returns, both modeled as strategic agents seeking a common payoff (evaluation score). This model assumes access to a worker that can independently replicate their own work. For example, copies of a large language model (LLM) system can all be independently given the same evaluation tasks and specification. I then introduce a replication loop implementation, based on waiting for critic matches, that returns an unbiased estimate (correct in expectation) of the worker-critic payoff.
@@ -255,14 +257,16 @@ The conflict here illustrates the importance of analyzing the critic as a strate
 
 ## Citation
 
+If you use the results or formalization in this repository, please cite the paper:
+
 ```bibtex
-@misc{robertson2026mutualeval,
-  title={The Replication Loop: Mutual Evaluation and Supervision without Peers},
-  author={Robertson, Zachary},
-  year={2026},
-  month={September},
-  institution={Stanford University},
-  url={https://zrobertson466920.github.io/MutualEvaluation}
+@article{robertson2026mutual,
+  title   = {Mutual Evaluation and Supervision without Peers},
+  author  = {Robertson, Zachary},
+  year    = {2026},
+  eprint  = {2609.20789},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.GT}
 }
 ```
 
